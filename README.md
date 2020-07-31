@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/kevalpatel2106/crypto-wallet.svg?branch=master)
+[![Build Status](https://travis-ci.com/kevalpatel2106/crypto-wallet.svg?branch=master)](https://travis-ci.com/kevalpatel2106/crypto-wallet) [![codecov](https://codecov.io/gh/kevalpa
