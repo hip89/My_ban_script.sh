@@ -2,4 +2,7 @@
 
 # Crypto Wallet
 
-#### Demo application for displaying t
+#### Demo application for displaying the Bitcoin transaction in Crypto Wallet.
+
+## Features:
+- Uses android architecture c
