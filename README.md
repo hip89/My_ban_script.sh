@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/kevalpatel2106/crypto-wallet.svg?branch=master)
