@@ -5,4 +5,6 @@
 #### Demo application for displaying the Bitcoin transaction in Crypto Wallet.
 
 ## Features:
-- Uses android architecture c
+- Uses android architecture components.
+- Follows MVVM architecture pattern.
+- Demonstrates testing frameworks like JUnit, Roboel
