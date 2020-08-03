@@ -7,4 +7,5 @@
 ## Features:
 - Uses android architecture components.
 - Follows MVVM architecture pattern.
-- Demonstrates testing frameworks like JUnit, Roboel
+- Demonstrates testing frameworks like JUnit, Roboelectric and Espresso tests
+- Uses dagger heavily to provide clear separation between different architec
