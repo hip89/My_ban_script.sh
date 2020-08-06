@@ -11,4 +11,8 @@
 - Uses dagger heavily to provide clear separation between different architecture layers. Helps to write testable code.
 - Mocking shared preferences and web server to write accurate tests.
 
-> This application is just a demonstration for the possible desig
+> This application is just a demonstration for the possible design of crypto wallet.
+
+## Overview 
+
+- Application uses the Multi Address api of the popular crypto wallet [Bl
