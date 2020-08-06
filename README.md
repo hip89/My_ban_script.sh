@@ -9,4 +9,6 @@
 - Follows MVVM architecture pattern.
 - Demonstrates testing frameworks like JUnit, Roboelectric and Espresso tests
 - Uses dagger heavily to provide clear separation between different architecture layers. Helps to write testable code.
-- Mocking shared preferences and web server to wr
+- Mocking shared preferences and web server to write accurate tests.
+
+> This application is just a demonstration for the possible desig
