@@ -8,4 +8,5 @@
 - Uses android architecture components.
 - Follows MVVM architecture pattern.
 - Demonstrates testing frameworks like JUnit, Roboelectric and Espresso tests
-- Uses dagger heavily to provide clear separation between different architec
+- Uses dagger heavily to provide clear separation between different architecture layers. Helps to write testable code.
+- Mocking shared preferences and web server to wr
