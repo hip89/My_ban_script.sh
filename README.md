@@ -17,4 +17,4 @@
 
 - Application uses the Multi Address api of the popular crypto wallet [Blockchain](https://www.blockchain.com). Blockchain multi address api gives the list of BTC transaction for the given wallet address. See the API [documentation](https://www.blockchain.com/api/blockchain_api).
 - You can replace the address to retrieve.
-- The dashbo
+- The dashboard activity shows the number of transaction, available balance
