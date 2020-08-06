@@ -15,4 +15,4 @@
 
 ## Overview 
 
-- Application uses the Multi Address api of the popular crypto wallet [Blockchain](https://www.blockchain.com). Blockchain multi address api gives the list of
+- Application uses the Multi Address api of the popular crypto wallet [Blockchain](https://www.blockchain.com). Blockchain multi address api gives the list of BTC transaction for the given wallet address. See the API [documentation](https://w
