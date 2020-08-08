@@ -21,4 +21,10 @@
 
 ## How to run tests?
 - Make sure you connect physical device or run an emulator before running the UI tests.
--
+- To run tests, run following command:
+```bash
+./gradlew cAT
+```
+
+## Acknowledgement:
+- 
