@@ -19,4 +19,6 @@
 - You can replace the address to retrieve.
 - The dashboard activity shows the number of transaction, available balance, total sent/received amount in BTC and list of each transactions (amount in Satoshi).
 
-## How 
+## How to run tests?
+- Make sure you connect physical device or run an emulator before running the UI tests.
+-
