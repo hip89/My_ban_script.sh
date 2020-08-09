@@ -27,4 +27,4 @@
 ```
 
 ## Acknowledgement:
-- This application implements the design and animations from the beautiful post o
+- This application implements the design and animations from the beautiful post on [uplabs](https://www.uplabs.com/posts/restaurant-app-for-android). (There are some cha
