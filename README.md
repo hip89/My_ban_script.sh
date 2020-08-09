@@ -27,4 +27,4 @@
 ```
 
 ## Acknowledgement:
-- 
+- This application implements the design and animations from the beautiful post o
