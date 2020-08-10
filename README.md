@@ -28,4 +28,9 @@
 
 ## Acknowledgement:
 - This application implements the design and animations from the beautiful post on [uplabs](https://www.uplabs.com/posts/restaurant-app-for-android). (There are some changes in resources such as fonts, images and texts from the original mock up.)
-- Code coverage currently displays percentage of code tested by the unit tests. (UI test
+- Code coverage currently displays percentage of code tested by the unit tests. (UI tests are not being performed on CI server.)
+
+## Screenshots:
+
+| Pixel 2 | Pixel C |
+|:---:|:---:|
