@@ -35,4 +35,6 @@
 | Pixel 2 | Pixel C |
 |:---:|:---:|
 |![portrait.gif](/.github/phone_portrait.png)|![landscape.gif](/.github/tab_portrait.png)|
-|![port
+|![portrait.gif](/.github/phone_landscape.png)|![landscape.gif](/.github/tab_landscape.png)|
+
+
