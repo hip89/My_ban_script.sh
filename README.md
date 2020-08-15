@@ -42,4 +42,5 @@
 - You can download the debuggable apk from [here](https://github.com/kevalpatel2106/PastryShop/releases) and play with it.
 
 
-## W
+## Want to contribute?
+Every small or large contribution to this project is appreciated
