@@ -43,4 +43,7 @@
 
 
 ## Want to contribute?
-Every small or large contribution to this project is appreciated. Make sure you read the [contribution guide](/.github/CONTRIBUTING.md) before ge
+Every small or large contribution to this project is appreciated. Make sure you read the [contribution guide](/.github/CONTRIBUTING.md) before generating the pull request.
+
+## Questions?🤔
+Hit me on twitter [![Twitter](https://img.shields.io
