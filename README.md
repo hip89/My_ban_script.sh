@@ -39,4 +39,7 @@
 
 
 ## What to try this out?
-- You can download the debuggable apk from [h
+- You can download the debuggable apk from [here](https://github.com/kevalpatel2106/PastryShop/releases) and play with it.
+
+
+## W
