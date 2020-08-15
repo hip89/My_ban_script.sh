@@ -38,3 +38,5 @@
 |![portrait.gif](/.github/phone_landscape.png)|![landscape.gif](/.github/tab_landscape.png)|
 
 
+## What to try this out?
+- You can download the debuggable apk from [h
