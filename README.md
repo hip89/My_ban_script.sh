@@ -43,4 +43,4 @@
 
 
 ## Want to contribute?
-Every small or large contribution to this project is appreciated
+Every small or large contribution to this project is appreciated. Make sure you read the [contribution guide](/.github/CONTRIBUTING.md) before ge
