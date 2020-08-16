@@ -51,4 +51,4 @@ Hit me on twitter [![Twitter](https://img.shields.io/badge/Twitter-@kevalpatel21
 ## License
 Copyright 2018 Keval Patel
 
-Licensed under the Apache Licens
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance wi
