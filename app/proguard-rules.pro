@@ -12,4 +12,6 @@
 #   public *;
 #}
 
-# Uncomment this 
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattribute
