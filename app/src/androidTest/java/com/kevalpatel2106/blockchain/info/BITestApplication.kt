@@ -6,4 +6,6 @@ import com.kevalpatel2106.testutils.MockServerManager
 import java.io.IOException
 
 /**
- * Instrumented test, which will e
+ * Instrumented test, which will execute on an Android device.
+ *
+ * See [testing documentation](http://d.android.com/tools/testi
