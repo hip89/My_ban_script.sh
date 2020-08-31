@@ -8,4 +8,8 @@ import java.io.IOException
 /**
  * Instrumented test, which will execute on an Android device.
  *
- * See [testing documentation](http://d.android.com/tools/testi
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+internal class BITestApplication : BaseApplication() {
+
+    var mockServerManager 
