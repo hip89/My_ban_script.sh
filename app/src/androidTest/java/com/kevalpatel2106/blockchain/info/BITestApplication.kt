@@ -12,4 +12,10 @@ import java.io.IOException
  */
 internal class BITestApplication : BaseApplication() {
 
-    var mockServerManager 
+    var mockServerManager = MockServerManager()
+
+
+    @Volatile
+    private lateinit var mockServerBaseUrl: String
+
+    override f
