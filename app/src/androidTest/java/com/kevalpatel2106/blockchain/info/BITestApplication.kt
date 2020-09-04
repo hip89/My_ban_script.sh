@@ -18,4 +18,7 @@ internal class BITestApplication : BaseApplication() {
     @Volatile
     private lateinit var mockServerBaseUrl: String
 
-    override f
+    override fun onCreate() {
+        // Start the mock server
+        val thread = object : Thread() {
+            overr
