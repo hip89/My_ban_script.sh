@@ -21,4 +21,6 @@ internal class BITestApplication : BaseApplication() {
     override fun onCreate() {
         // Start the mock server
         val thread = object : Thread() {
-            overr
+            override fun run() {
+                try {
+                    mockServerManager.startMockWebS
