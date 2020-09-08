@@ -25,4 +25,7 @@ internal class BITestApplication : BaseApplication() {
                 try {
                     mockServerManager.startMockWebServer()
                     mockServerBaseUrl =  mockServerManager.getBaseUrl()
-  
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                }
+
