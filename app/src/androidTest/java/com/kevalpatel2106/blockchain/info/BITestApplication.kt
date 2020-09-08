@@ -23,4 +23,6 @@ internal class BITestApplication : BaseApplication() {
         val thread = object : Thread() {
             override fun run() {
                 try {
-                    mockServerManager.startMockWebS
+                    mockServerManager.startMockWebServer()
+                    mockServerBaseUrl =  mockServerManager.getBaseUrl()
+  
