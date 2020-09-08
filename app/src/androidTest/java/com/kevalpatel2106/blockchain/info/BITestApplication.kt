@@ -29,3 +29,8 @@ internal class BITestApplication : BaseApplication() {
                     e.printStackTrace()
                 }
 
+            }
+        }
+        thread.start()
+
+        // Wait for the server to sta
