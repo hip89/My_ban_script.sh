@@ -33,4 +33,10 @@ internal class BITestApplication : BaseApplication() {
         }
         thread.start()
 
-        // Wait for the server to sta
+        // Wait for the server to start
+        Thread.sleep(1000L)
+
+        super.onCreate()
+    }
+
+    override fun prepareAp
