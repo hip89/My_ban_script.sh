@@ -39,4 +39,6 @@ internal class BITestApplication : BaseApplication() {
         super.onCreate()
     }
 
-    override fun prepareAp
+    override fun prepareAppComponent(): AppDiComponent {
+        return DaggerTestAppDiComponent.builder()
+            
