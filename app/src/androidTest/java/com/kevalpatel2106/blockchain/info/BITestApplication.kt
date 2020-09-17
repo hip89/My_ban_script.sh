@@ -42,4 +42,8 @@ internal class BITestApplication : BaseApplication() {
     override fun prepareAppComponent(): AppDiComponent {
         return DaggerTestAppDiComponent.builder()
             .testAppDiModule(TestAppDiModule(this@BITestApplication, mockServerBaseUrl))
-          
+            .build()
+    }
+
+    override fun injectRootComponent() {
+        (appDiComponent
