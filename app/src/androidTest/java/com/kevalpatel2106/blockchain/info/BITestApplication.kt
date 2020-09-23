@@ -46,4 +46,6 @@ internal class BITestApplication : BaseApplication() {
     }
 
     override fun injectRootComponent() {
-        (appDiComponent
+        (appDiComponent as TestAppDiComponent).inject(this@BITestApplication)
+    }
+}
