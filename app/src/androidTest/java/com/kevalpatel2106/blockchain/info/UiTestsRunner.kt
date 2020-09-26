@@ -9,4 +9,6 @@ import androidx.test.runner.AndroidJUnitRunner
 /**
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
-class U
+class UiTestsRunner : AndroidJUnitRunner() {
+
+    @Throws(InstantiationException::class, 
