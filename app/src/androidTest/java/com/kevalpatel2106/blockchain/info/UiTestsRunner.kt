@@ -11,4 +11,5 @@ import androidx.test.runner.AndroidJUnitRunner
  */
 class UiTestsRunner : AndroidJUnitRunner() {
 
-    @Throws(InstantiationException::class, 
+    @Throws(InstantiationException::class, IllegalAccessException::class, ClassNotFoundException::class)
+    override fun newApp
