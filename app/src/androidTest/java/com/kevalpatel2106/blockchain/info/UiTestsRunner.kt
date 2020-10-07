@@ -14,4 +14,5 @@ class UiTestsRunner : AndroidJUnitRunner() {
     @Throws(InstantiationException::class, IllegalAccessException::class, ClassNotFoundException::class)
     override fun newApplication(cl: ClassLoader, className: String, context: Context): Application {
 
-        // Use the test application class that can inject mock dependencies using 
+        // Use the test application class that can inject mock dependencies using dagger.
+        return Instrumentation.newApplication(BITestApplication::class.j
