@@ -59,3 +59,37 @@ class DashboardActivityTest {
     @After
     fun tearUp(){
         sharedPrefsProvider.removeAll()
+    }
+
+    @Test
+    fun givenWalletInfo_checkWallet_onLoaded() {
+        // Check static wallet titles
+        onView(withId(R.id.wallet_balance_title_tv)).check(
+            matches(withText(containsString(rule.activity.getString(R.string.your_wallet_balance_is))))
+        )
+        onView(withId(R.id.number_of_transactions_title_tv)).check(
+            matches(withText(containsString(rule.activity.getString(R.string.total_number_of_transactions))))
+        )
+        onView(withId(R.id.total_recived_title_tv)).check(
+            matches(withText(containsString(rule.activity.getString(R.string.total_amount_received))))
+        )
+        onView(withId(R.id.total_sent_title_tv)).check(
+            matches(withText(containsString(rule.activity.getString(R.string.total_amount_sent))))
+        )
+
+        // Check amounts
+        val wallet = biRepository.observeWalletInfo().blockingFirst()
+        onView(withId(R.id.number_transaction_tv)).check(
+            matches(withText(containsString(wallet.numberOfTransactions.toString())))
+        )
+        onView(withId(R.id.wallet_balance_tv)).check(
+            matches(withText(containsString(wallet.formattedBalanace)))
+        )
+        onView(withId(R.id.total_received_amount_tv)).check(
+            matches(withText(containsString(wallet.formattedTotalReceived)))
+        )
+        onView(withId(R.id.total_sent_amount_tv)).check(
+            matches(withText(containsString(wallet.formattedTotalSent)))
+        )
+    }
+}
