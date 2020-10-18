@@ -9,4 +9,5 @@
 package com.kevalpatel2106.blockchain.info.di
 
 import android.app.Application
-import andro
+import android.preference.PreferenceManager
+import com.kevalpatel2106.blockchain.info.reposit
