@@ -10,4 +10,7 @@ package com.kevalpatel2106.blockchain.info.di
 
 import android.app.Application
 import android.preference.PreferenceManager
-import com.kevalpatel2106.blockchain.info.reposit
+import com.kevalpatel2106.blockchain.info.repository.SharedPrefsProvider
+import dagger.Module
+import dagger.Provides
+import javax.inject.Named
