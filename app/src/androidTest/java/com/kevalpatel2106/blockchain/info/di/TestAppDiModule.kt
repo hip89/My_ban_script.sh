@@ -14,3 +14,7 @@ import com.kevalpatel2106.blockchain.info.repository.SharedPrefsProvider
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
+import javax.inject.Singleton
+
+@Module
+internal class TestAppDiModule(private val application:
