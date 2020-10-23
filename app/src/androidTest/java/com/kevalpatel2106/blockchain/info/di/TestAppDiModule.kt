@@ -17,4 +17,8 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
-internal class TestAppDiModule(private val application:
+internal class TestAppDiModule(private val application: Application, private val baseUrl: String) {
+
+    @Singleton
+    @Provides
+    fun provideApplicat
