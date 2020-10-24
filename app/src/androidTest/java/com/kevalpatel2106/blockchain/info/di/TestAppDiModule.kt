@@ -21,4 +21,9 @@ internal class TestAppDiModule(private val application: Application, private val
 
     @Singleton
     @Provides
-    fun provideApplicat
+    fun provideApplication(): Application {
+        return application
+    }
+
+    /**
+     * Base url of the API end
