@@ -26,4 +26,9 @@ internal class TestAppDiModule(private val application: Application, private val
     }
 
     /**
-     * Base url of the API end
+     * Base url of the API endpoints.
+     */
+    @Singleton
+    @Provides
+    @Named(AppDiModule.BASE_URL)
+    fun provideBaseUrl
