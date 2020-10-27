@@ -45,4 +45,6 @@ internal class TestAppDiModule(private val application: Application, private val
     @Provides
     @Singleton
     internal fun provideSharedPreference(application: Application): SharedPrefsProvider {
-        return SharedPrefsProvider(PreferenceMan
+        return SharedPrefsProvider(PreferenceManager.getDefaultSharedPreferences(application))
+    }
+}
