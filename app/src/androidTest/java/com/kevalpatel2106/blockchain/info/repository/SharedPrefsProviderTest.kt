@@ -17,3 +17,81 @@ import org.junit.After
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
+import org.junit.Test
+import org.junit.runner.RunWith
+
+/**
+ * Test class for [SharedPrefsProvider].
+ */
+@RunWith(AndroidJUnit4::class)
+class SharedPrefsProviderTest {
+
+    private val TEST_KEY = "test_key"
+
+    private lateinit var mockSharedPreference: SharedPreferences
+
+    private lateinit var sharedPrefsProvider: SharedPrefsProvider
+
+    @Before
+    fun setUp() {
+        mockSharedPreference = PreferenceManager.getDefaultSharedPreferences(InstrumentationRegistry.getContext())
+        sharedPrefsProvider = SharedPrefsProvider(mockSharedPreference)
+    }
+
+    @After
+    fun after() {
+        mockSharedPreference.edit().clear().commit()
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun removePreferences() {
+        val editor = mockSharedPreference.edit()
+        editor.putString(TEST_KEY, "String")
+        editor.apply()
+
+        sharedPrefsProvider.removePreferences(TEST_KEY)
+        assertTrue(mockSharedPreference.getString(TEST_KEY, null) == null)
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun savePreferences() {
+        assertFalse(mockSharedPreference.getInt(TEST_KEY, -1) != -1)
+        sharedPrefsProvider.savePreferences {
+            it.putString(TEST_KEY, "String")
+        }
+        assertTrue(mockSharedPreference.getString(TEST_KEY, null) != null)
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun getStringFromPreferences() {
+        val testObserver = sharedPrefsProvider.observeStringFromPreference(TEST_KEY).test()
+        val testVal = "String"
+
+        val editor = mockSharedPreference.edit()
+        editor.putString(TEST_KEY, testVal)
+        editor.apply()
+
+        testObserver.awaitCount(2)
+        testObserver.assertNoErrors()
+            .assertNotComplete()
+            .assertValueAt(1) { it == testVal }
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun getBoolFromPreferences() {
+        val testObserver = sharedPrefsProvider.observeBoolFromPreference(TEST_KEY).test()
+        val testVal = true
+
+        val editor = mockSharedPreference.edit()
+        editor.putBoolean(TEST_KEY, testVal)
+        editor.apply()
+
+        testObserver.awaitCount(2)
+        testObserver.assertNoErrors()
+            .assertNotComplete()
+            .assertValueAt(1) { it == testVal }
+    }
