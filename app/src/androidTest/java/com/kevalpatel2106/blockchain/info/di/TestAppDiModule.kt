@@ -39,4 +39,9 @@ internal class TestAppDiModule(private val application: Application, private val
     @Singleton
     @Named(AppDiModule.ENABLE_LOG)
     internal fun provideIsEnableLogging(): Boolean {
-        return tr
+        return true
+    }
+
+    @Provides
+    @Singleton
+    internal fun provideSharedPreference
