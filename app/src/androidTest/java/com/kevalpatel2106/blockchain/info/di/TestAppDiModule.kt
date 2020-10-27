@@ -37,4 +37,6 @@ internal class TestAppDiModule(private val application: Application, private val
 
     @Provides
     @Singleton
-    @Named(AppDiMo
+    @Named(AppDiModule.ENABLE_LOG)
+    internal fun provideIsEnableLogging(): Boolean {
+        return tr
