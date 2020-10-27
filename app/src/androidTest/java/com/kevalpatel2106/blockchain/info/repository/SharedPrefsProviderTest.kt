@@ -95,3 +95,36 @@ class SharedPrefsProviderTest {
             .assertNotComplete()
             .assertValueAt(1) { it == testVal }
     }
+
+    @Test
+    @Throws(Exception::class)
+    fun getLongFromPreference() {
+        val testObserver = sharedPrefsProvider.observeLongFromPreference(TEST_KEY).test()
+        val testVal = 100000L
+
+        val editor = mockSharedPreference.edit()
+        editor.putLong(TEST_KEY, testVal)
+        editor.apply()
+
+        testObserver.awaitCount(2)
+        testObserver.assertNoErrors()
+            .assertNotComplete()
+            .assertValueAt(1) { it == testVal }
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun getIntFromPreference() {
+        val testObserver = sharedPrefsProvider.observeIntFromPreference(TEST_KEY).test()
+        val testVal = 100
+
+        val editor = mockSharedPreference.edit()
+        editor.putInt(TEST_KEY, testVal)
+        editor.apply()
+
+        testObserver.awaitCount(2)
+        testObserver.assertNoErrors()
+            .assertNotComplete()
+            .assertValueAt(1) { it == testVal }
+    }
+}
