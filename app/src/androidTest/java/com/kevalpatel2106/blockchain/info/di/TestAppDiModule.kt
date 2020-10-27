@@ -31,4 +31,10 @@ internal class TestAppDiModule(private val application: Application, private val
     @Singleton
     @Provides
     @Named(AppDiModule.BASE_URL)
-    fun provideBaseUrl
+    fun provideBaseUrl(): String {
+        return baseUrl
+    }
+
+    @Provides
+    @Singleton
+    @Named(AppDiMo
