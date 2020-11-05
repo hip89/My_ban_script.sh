@@ -8,4 +8,6 @@
     <application
             android:name=".BIApplication"
             android:allowBackup="false"
-            androi
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+      
