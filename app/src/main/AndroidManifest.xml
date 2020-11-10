@@ -24,4 +24,5 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
-                <catego
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-fil
