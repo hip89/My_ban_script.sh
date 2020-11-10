@@ -15,4 +15,5 @@
             tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-     
+                android:name=".SplashActivity"
+                android:resize
