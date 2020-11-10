@@ -19,4 +19,7 @@
                 android:resizeableActivity="true"
                 android:launchMode="singleTop"
                 android:noHistory="true"
-                android:theme="@style/AppTheme.NoActi
+                android:theme="@style/AppTheme.NoActionbar.Splash"
+                tools:ignore="UnusedAttribute">
+            <intent-filter>
+     
