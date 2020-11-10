@@ -18,4 +18,5 @@
                 android:name=".SplashActivity"
                 android:resizeableActivity="true"
                 android:launchMode="singleTop"
-                andro
+                android:noHistory="true"
+                android:theme="@style/AppTheme.NoActi
