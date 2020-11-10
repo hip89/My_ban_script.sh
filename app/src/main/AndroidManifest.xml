@@ -16,4 +16,6 @@
 
         <activity
                 android:name=".SplashActivity"
-                android:resize
+                android:resizeableActivity="true"
+                android:launchMode="singleTop"
+                andro
