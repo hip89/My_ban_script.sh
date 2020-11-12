@@ -6,4 +6,7 @@ data class Transaction(
         val fee: Long,
         val result: Long,
         val balance: Long,
-        val time: 
+        val time: Long,
+        val hash: String
+) {
+    override fun equals(other: Any?): Boolean = (other
