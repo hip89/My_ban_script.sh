@@ -28,4 +28,5 @@
             </intent-filter>
         </activity>
         <activity android:name=".dashboard.DashboardActivity"
-          
+                  android:resizeableActivity="true"
+                  android:theme="@style/AppTheme.N
