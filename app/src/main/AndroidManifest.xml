@@ -29,4 +29,8 @@
         </activity>
         <activity android:name=".dashboard.DashboardActivity"
                   android:resizeableActivity="true"
-                  android:theme="@style/AppTheme.N
+                  android:theme="@style/AppTheme.NoActionbar"
+                  tools:ignore="UnusedAttribute"/>
+    </application>
+
+</manifest>
