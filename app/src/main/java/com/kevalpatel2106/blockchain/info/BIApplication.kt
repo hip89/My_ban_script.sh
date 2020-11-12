@@ -5,3 +5,22 @@ import com.facebook.stetho.Stetho
 import com.kevalpatel2106.blockchain.info.di.AppDiComponent
 import com.kevalpatel2106.blockchain.info.di.AppDiModule
 import com.kevalpatel2106.blockchain.info.di.DaggerAppDiComponent
+import com.kevalpatel2106.blockchain.info.utils.BaseApplication
+
+internal class BIApplication : BaseApplication() {
+
+    override fun prepareAppComponent(): AppDiComponent {
+        return DaggerAppDiComponent.builder()
+                .appDiModule(AppDiModule(this@BIApplication))
+                .build()
+    }
+
+    override fun injectRootComponent() {
+        super.appDiComponent.inject(this@BIApplication)
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        Stetho.initializeWithDefaults(this@BIApplication)
+    }
+}
