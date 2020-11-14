@@ -15,4 +15,8 @@ data class Transaction(
 
     val formattedResult: String = result.run {
         if (this > 0) {
-            "+
+            "+${this} SAT"
+        } else {
+            "-${Math.abs(this)} SAT"
+        }
+    }
