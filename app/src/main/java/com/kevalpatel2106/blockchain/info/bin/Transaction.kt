@@ -28,4 +28,6 @@ data class Transaction(
     val isDebit = result < 0
 
     companion object {
-  
+        val EMPTY_TRANSACTION = Transaction(0, 0, 0, 0, "")
+    }
+}
