@@ -11,4 +11,8 @@ data class Transaction(
 ) {
     override fun equals(other: Any?): Boolean = (other as? Transaction)?.hash == hash
 
-    override fun hashCode(): Int = hash.h
+    override fun hashCode(): Int = hash.hashCode()
+
+    val formattedResult: String = result.run {
+        if (this > 0) {
+            "+
