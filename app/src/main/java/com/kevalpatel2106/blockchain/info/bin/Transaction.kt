@@ -9,4 +9,6 @@ data class Transaction(
         val time: Long,
         val hash: String
 ) {
-    override fun equals(other: Any?): Boolean = (other
+    override fun equals(other: Any?): Boolean = (other as? Transaction)?.hash == hash
+
+    override fun hashCode(): Int = hash.h
