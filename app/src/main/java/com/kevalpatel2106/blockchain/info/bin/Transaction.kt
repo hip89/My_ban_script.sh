@@ -20,3 +20,7 @@ data class Transaction(
             "-${Math.abs(this)} SAT"
         }
     }
+
+    val formattedFee: String = "$fee SAT"
+
+    val formattedBalance: String = "${conver
