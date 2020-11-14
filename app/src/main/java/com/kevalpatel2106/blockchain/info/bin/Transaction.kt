@@ -23,4 +23,9 @@ data class Transaction(
 
     val formattedFee: String = "$fee SAT"
 
-    val formattedBalance: String = "${conver
+    val formattedBalance: String = "${convertToBtc(balance)} BTC"
+
+    val isDebit = result < 0
+
+    companion object {
+  
