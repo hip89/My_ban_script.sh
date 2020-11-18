@@ -10,4 +10,5 @@ data class Wallet(
         val totalReceived: Long
 ) {
     val formattedBalanace = "${convertToBtc(finalBalance)} BTC"
-    val formattedTotalSent = "
+    val formattedTotalSent = "${convertToBtc(totalSent)} BTC"
+    val formattedTotalReceived = "${convertT
