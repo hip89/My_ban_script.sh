@@ -12,4 +12,6 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.snackbar.Snackbar
 import com.kevalpatel2106.blockchain.info.R
 import com.kevalpatel2106.blockchain.info.utils.getAppComponent
-import com.kevalpatel2106.blockchain.info.
+import com.kevalpatel2106.blockchain.info.utils.nullSafeObserve
+import com.kevalpatel2106.blockchain.info.utils.prepareLaunchIntent
+import kotli
