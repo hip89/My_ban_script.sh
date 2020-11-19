@@ -15,4 +15,8 @@ import com.kevalpatel2106.blockchain.info.utils.getAppComponent
 import com.kevalpatel2106.blockchain.info.utils.nullSafeObserve
 import com.kevalpatel2106.blockchain.info.utils.prepareLaunchIntent
 import kotlinx.android.synthetic.main.activity_dashboard.*
-import kotlinx.android.synthetic.ma
+import kotlinx.android.synthetic.main.wallet_info_card.*
+import javax.inject.Inject
+
+
+class DashboardActivity : AppCo
