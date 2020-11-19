@@ -19,4 +19,9 @@ import kotlinx.android.synthetic.main.wallet_info_card.*
 import javax.inject.Inject
 
 
-class DashboardActivity : AppCo
+class DashboardActivity : AppCompatActivity() {
+
+    private lateinit var model: DashboardViewModel
+
+    @Inject
+    
