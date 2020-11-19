@@ -11,4 +11,5 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.snackbar.Snackbar
 import com.kevalpatel2106.blockchain.info.R
-import com.kevalpatel2106.bl
+import com.kevalpatel2106.blockchain.info.utils.getAppComponent
+import com.kevalpatel2106.blockchain.info.
