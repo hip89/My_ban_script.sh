@@ -24,4 +24,6 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var model: DashboardViewModel
 
     @Inject
-    
+    internal lateinit var viewModelProvider: ViewModelProvider.Factory
+
+    override fun
