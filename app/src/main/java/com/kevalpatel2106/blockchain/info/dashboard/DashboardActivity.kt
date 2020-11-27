@@ -35,4 +35,4 @@ class DashboardActivity : AppCompatActivity() {
                 .of(this@DashboardActivity, viewModelProvider)
                 .get(DashboardViewModel::class.java)
 
-        dash
+        dashboard_appbar_height.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLa
