@@ -40,4 +40,10 @@ class DashboardActivity : AppCompatActivity() {
                 dashboard_list_card.cardElevation = resources.getDimension(R.dimen.spacing_pico)
             } else {
                 dashboard_list_card.cardElevation = 0f
-     
+            }
+        })
+
+        setRecyclerView()
+        setWalletInfo()
+
+        mo
