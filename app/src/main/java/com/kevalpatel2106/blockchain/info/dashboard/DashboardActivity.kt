@@ -26,4 +26,5 @@ class DashboardActivity : AppCompatActivity() {
     @Inject
     internal lateinit var viewModelProvider: ViewModelProvider.Factory
 
-    override fun
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceS
