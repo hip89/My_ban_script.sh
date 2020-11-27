@@ -32,4 +32,7 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
         model = ViewModelProviders
-                .of(this@Dashboard
+                .of(this@DashboardActivity, viewModelProvider)
+                .get(DashboardViewModel::class.java)
+
+        dash
