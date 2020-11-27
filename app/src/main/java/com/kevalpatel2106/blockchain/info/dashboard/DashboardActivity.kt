@@ -37,4 +37,7 @@ class DashboardActivity : AppCompatActivity() {
 
         dashboard_appbar_height.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
             if (verticalOffset > -appBarLayout.height) {
-                dashboard_list_card.cardElevation = resources.getDimension(R.dimen.spacing
+                dashboard_list_card.cardElevation = resources.getDimension(R.dimen.spacing_pico)
+            } else {
+                dashboard_list_card.cardElevation = 0f
+     
