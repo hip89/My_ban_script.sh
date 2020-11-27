@@ -29,4 +29,7 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getAppComponent().inject(this@DashboardActivity)
-        setContentView(R.
+        setContentView(R.layout.activity_dashboard)
+
+        model = ViewModelProviders
+                .of(this@Dashboard
