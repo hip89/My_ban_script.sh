@@ -27,4 +27,6 @@ class DashboardActivity : AppCompatActivity() {
     internal lateinit var viewModelProvider: ViewModelProvider.Factory
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceS
+        super.onCreate(savedInstanceState)
+        getAppComponent().inject(this@DashboardActivity)
+        setContentView(R.
