@@ -46,4 +46,5 @@ class DashboardActivity : AppCompatActivity() {
         setRecyclerView()
         setWalletInfo()
 
-        mo
+        model.isInitialLoading.nullSafeObserve(this@DashboardActivity) {
+            dashboard_flipper.di
