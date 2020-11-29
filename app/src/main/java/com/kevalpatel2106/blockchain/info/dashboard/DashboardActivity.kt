@@ -47,4 +47,6 @@ class DashboardActivity : AppCompatActivity() {
         setWalletInfo()
 
         model.isInitialLoading.nullSafeObserve(this@DashboardActivity) {
-            dashboard_flipper.di
+            dashboard_flipper.displayedChild = if (it) POS_LOADER else POS_LIST
+        }
+        model.erro
