@@ -55,3 +55,5 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun setWalletInfo() {
+        model.wallet.nullSafeObserve(this) {
+            wallet_balance_tv.text = it.for
