@@ -50,4 +50,8 @@ class DashboardActivity : AppCompatActivity() {
             dashboard_flipper.displayedChild = if (it) POS_LOADER else POS_LIST
         }
         model.errorMessage.nullSafeObserve(this@DashboardActivity) {
-            Snackbar.make(dashboard
+            Snackbar.make(dashboard_root, it, Snackbar.LENGTH_LONG).show()
+        }
+    }
+
+    private fun setWalletInfo() {
