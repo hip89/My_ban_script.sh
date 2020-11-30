@@ -49,4 +49,5 @@ class DashboardActivity : AppCompatActivity() {
         model.isInitialLoading.nullSafeObserve(this@DashboardActivity) {
             dashboard_flipper.displayedChild = if (it) POS_LOADER else POS_LIST
         }
-        model.erro
+        model.errorMessage.nullSafeObserve(this@DashboardActivity) {
+            Snackbar.make(dashboard
