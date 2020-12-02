@@ -57,4 +57,6 @@ class DashboardActivity : AppCompatActivity() {
     private fun setWalletInfo() {
         model.wallet.nullSafeObserve(this) {
             wallet_balance_tv.text = it.formattedBalanace
-            number_transaction_tv.text = it.numberOfTransactio
+            number_transaction_tv.text = it.numberOfTransactions.toString()
+            total_received_amount_tv.text = it.formattedTotalReceived
+            total_sent
