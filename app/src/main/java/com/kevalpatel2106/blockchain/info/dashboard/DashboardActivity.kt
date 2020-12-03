@@ -59,4 +59,8 @@ class DashboardActivity : AppCompatActivity() {
             wallet_balance_tv.text = it.formattedBalanace
             number_transaction_tv.text = it.numberOfTransactions.toString()
             total_received_amount_tv.text = it.formattedTotalReceived
-            total_sent
+            total_sent_amount_tv.text = it.formattedTotalSent
+        }
+    }
+
+    private fun setRecyc
