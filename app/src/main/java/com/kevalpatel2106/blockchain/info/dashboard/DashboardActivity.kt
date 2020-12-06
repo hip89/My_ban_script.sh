@@ -64,4 +64,5 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun setRecyclerView() {
-        transaction_list.layoutManager = LinearLayoutManager(this@DashboardActivity
+        transaction_list.layoutManager = LinearLayoutManager(this@DashboardActivity)
+        transaction_list.adapter = TransactionsAdapter { model.loadMoreTransa
