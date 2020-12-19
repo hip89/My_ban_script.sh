@@ -68,4 +68,8 @@ class DashboardActivity : AppCompatActivity() {
         transaction_list.adapter = TransactionsAdapter { model.loadMoreTransaction() }
         transaction_list.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL).apply { setDrawable(resources.getDrawable(R.drawable.divider)) })
         model.transactions.nullSafeObserve(this@DashboardActivity) {
-            (transaction_list.adapter as TransactionsAdapter).submitList
+            (transaction_list.adapter as TransactionsAdapter).submitList(it)
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolea
