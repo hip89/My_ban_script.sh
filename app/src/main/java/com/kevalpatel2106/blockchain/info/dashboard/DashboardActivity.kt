@@ -81,4 +81,5 @@ class DashboardActivity : AppCompatActivity() {
         private const val POS_LOADER = 1
         private const val POS_LIST = 0
 
-        fun launch(context: Co
+        fun launch(context: Context) {
+            context.startActivity(context.prepareLaunchIntent(DashboardActivity:
