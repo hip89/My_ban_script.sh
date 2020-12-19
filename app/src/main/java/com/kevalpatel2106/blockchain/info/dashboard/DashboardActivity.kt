@@ -78,4 +78,7 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val POS_L
+        private const val POS_LOADER = 1
+        private const val POS_LIST = 0
+
+        fun launch(context: Co
