@@ -7,4 +7,8 @@ import com.kevalpatel2106.blockchain.info.bin.Wallet
 import com.kevalpatel2106.blockchain.info.repository.BIRepository
 import com.kevalpatel2106.blockchain.info.utils.BaseViewModel
 import com.kevalpatel2106.blockchain.info.utils.SingleLiveEvent
-import com.kevalpatel2106.blockchain
+import com.kevalpatel2106.blockchain.info.utils.addTo
+import javax.inject.Inject
+
+class DashboardViewModel @Inject constructor(
+        pr
