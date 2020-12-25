@@ -11,4 +11,6 @@ import com.kevalpatel2106.blockchain.info.utils.addTo
 import javax.inject.Inject
 
 class DashboardViewModel @Inject constructor(
-        pr
+        private val biRepository: BIRepository
+) : BaseViewModel() {
+    private var allTrans
