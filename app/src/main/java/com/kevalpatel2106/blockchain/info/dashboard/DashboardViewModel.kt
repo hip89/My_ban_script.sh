@@ -13,4 +13,6 @@ import javax.inject.Inject
 class DashboardViewModel @Inject constructor(
         private val biRepository: BIRepository
 ) : BaseViewModel() {
-    private var allTrans
+    private var allTransactionsLoaded: Boolean = false
+
+    internal val transactions = MutableLiveData<List<Transaction
