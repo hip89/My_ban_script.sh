@@ -15,4 +15,6 @@ class DashboardViewModel @Inject constructor(
 ) : BaseViewModel() {
     private var allTransactionsLoaded: Boolean = false
 
-    internal val transactions = MutableLiveData<List<Transaction
+    internal val transactions = MutableLiveData<List<Transaction>>()
+    internal val errorMessage = SingleLiveEvent<String>()
+    internal val wallet = MutableLiveData<
