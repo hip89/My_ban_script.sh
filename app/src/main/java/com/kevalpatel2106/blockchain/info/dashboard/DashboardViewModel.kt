@@ -17,4 +17,8 @@ class DashboardViewModel @Inject constructor(
 
     internal val transactions = MutableLiveData<List<Transaction>>()
     internal val errorMessage = SingleLiveEvent<String>()
-    internal val wallet = MutableLiveData<
+    internal val wallet = MutableLiveData<Wallet>()
+    internal val isInitialLoading = MutableLiveData<Boolean>()
+
+    init {
+     
