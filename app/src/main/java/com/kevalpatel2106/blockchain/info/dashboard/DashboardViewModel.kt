@@ -21,4 +21,7 @@ class DashboardViewModel @Inject constructor(
     internal val isInitialLoading = MutableLiveData<Boolean>()
 
     init {
-     
+        transactions.value = arrayListOf()
+        isInitialLoading.value = true
+
+        observe
