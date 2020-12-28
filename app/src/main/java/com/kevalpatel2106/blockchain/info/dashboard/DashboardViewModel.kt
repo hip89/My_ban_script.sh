@@ -30,4 +30,7 @@ class DashboardViewModel @Inject constructor(
         loadMoreTransaction()
     }
 
-    @VisibleForTest
+    @VisibleForTesting
+    internal fun observeWallet() {
+        biRepository.observeWalletInfo()
+       
