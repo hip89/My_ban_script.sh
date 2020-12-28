@@ -24,4 +24,10 @@ class DashboardViewModel @Inject constructor(
         transactions.value = arrayListOf()
         isInitialLoading.value = true
 
-        observe
+        observeWallet()
+
+        // Start loading the first page
+        loadMoreTransaction()
+    }
+
+    @VisibleForTest
