@@ -33,4 +33,6 @@ class DashboardViewModel @Inject constructor(
     @VisibleForTesting
     internal fun observeWallet() {
         biRepository.observeWalletInfo()
-       
+                .subscribe({
+                    wallet.value = it
+                }, {
