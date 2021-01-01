@@ -36,3 +36,6 @@ class DashboardViewModel @Inject constructor(
                 .subscribe({
                     wallet.value = it
                 }, {
+                    errorMessage.value = it.message
+                })
+              
