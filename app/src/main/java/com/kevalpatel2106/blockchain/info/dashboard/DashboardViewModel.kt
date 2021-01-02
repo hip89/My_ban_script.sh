@@ -38,4 +38,8 @@ class DashboardViewModel @Inject constructor(
                 }, {
                     errorMessage.value = it.message
                 })
-              
+                .addTo(compositeDisposable)
+    }
+
+    fun loadMoreTransaction() {
+        if (allTran
