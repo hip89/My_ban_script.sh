@@ -42,4 +42,6 @@ class DashboardViewModel @Inject constructor(
     }
 
     fun loadMoreTransaction() {
-        if (allTran
+        if (allTransactionsLoaded) return
+
+        val offset = transactions.value?.s
