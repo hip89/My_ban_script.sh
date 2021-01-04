@@ -44,4 +44,6 @@ class DashboardViewModel @Inject constructor(
     fun loadMoreTransaction() {
         if (allTransactionsLoaded) return
 
-        val offset = transactions.value?.s
+        val offset = transactions.value?.size ?: 0
+        biRepository.getTransactions(
+                "xpub6CfLQa8fLgtouvLxrb8Etvj
