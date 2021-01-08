@@ -50,4 +50,6 @@ class DashboardViewModel @Inject constructor(
                 offset
         ).doOnSubscribe {
             if (offset == 0) {
-    
+                isInitialLoading.value = true
+                allTransactionsLoaded = false
+              
