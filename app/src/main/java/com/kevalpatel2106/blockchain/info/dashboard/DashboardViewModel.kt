@@ -61,4 +61,6 @@ class DashboardViewModel @Inject constructor(
         }.doOnSuccess {
             isInitialLoading.value = false
         }.subscribe({ (transactionsList, totalTransactions) ->
-            transactions.value = transactions.v
+            transactions.value = transactions.value?.toMutableList()?.apply {
+                removeAll { it == Transaction.EMPTY_TRANSACTION }
+       
