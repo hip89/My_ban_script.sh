@@ -52,4 +52,6 @@ class DashboardViewModel @Inject constructor(
             if (offset == 0) {
                 isInitialLoading.value = true
                 allTransactionsLoaded = false
-              
+                transactions.value = listOf()
+            } else {
+                
