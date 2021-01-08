@@ -57,4 +57,7 @@ class DashboardViewModel @Inject constructor(
                 transactions.value = transactions.value?.toMutableList()?.apply {
                     add(Transaction.EMPTY_TRANSACTION)
                 }
-         
+            }
+        }.doOnSuccess {
+            isInitialLoading.value = false
+        }.subscribe(
