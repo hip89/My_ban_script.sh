@@ -55,4 +55,6 @@ class DashboardViewModel @Inject constructor(
                 transactions.value = listOf()
             } else {
                 transactions.value = transactions.value?.toMutableList()?.apply {
-        
+                    add(Transaction.EMPTY_TRANSACTION)
+                }
+         
