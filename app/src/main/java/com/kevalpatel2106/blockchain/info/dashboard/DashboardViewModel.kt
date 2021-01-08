@@ -60,4 +60,5 @@ class DashboardViewModel @Inject constructor(
             }
         }.doOnSuccess {
             isInitialLoading.value = false
-        }.subscribe(
+        }.subscribe({ (transactionsList, totalTransactions) ->
+            transactions.value = transactions.v
