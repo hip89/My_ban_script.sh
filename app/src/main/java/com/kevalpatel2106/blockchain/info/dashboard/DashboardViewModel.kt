@@ -54,4 +54,5 @@ class DashboardViewModel @Inject constructor(
                 allTransactionsLoaded = false
                 transactions.value = listOf()
             } else {
-                
+                transactions.value = transactions.value?.toMutableList()?.apply {
+        
