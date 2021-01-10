@@ -67,4 +67,7 @@ class DashboardViewModel @Inject constructor(
             }
 
             allTransactionsLoaded = totalTransactions == (transactions.value?.size ?: 0).toLong()
-   
+        }, {
+            errorMessage.value = it.message
+        }).addTo(compositeDisposable)
+  
