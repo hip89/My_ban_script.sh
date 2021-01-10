@@ -66,4 +66,5 @@ class DashboardViewModel @Inject constructor(
                 addAll(transactionsList)
             }
 
-            allTransact
+            allTransactionsLoaded = totalTransactions == (transactions.value?.size ?: 0).toLong()
+   
