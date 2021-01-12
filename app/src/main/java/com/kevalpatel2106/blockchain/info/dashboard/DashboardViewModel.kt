@@ -70,4 +70,5 @@ class DashboardViewModel @Inject constructor(
         }, {
             errorMessage.value = it.message
         }).addTo(compositeDisposable)
-  
+    }
+}
