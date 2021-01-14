@@ -10,4 +10,5 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RootViewHolder {
         return when (viewType) {
-            TYPE_ITEM -> Transactio
+            TYPE_ITEM -> TransactionViewHolder.create(parent)
+            TYPE_LOADER -> LoaderViewHolder.create(paren
