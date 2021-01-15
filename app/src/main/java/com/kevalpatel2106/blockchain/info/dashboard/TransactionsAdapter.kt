@@ -13,4 +13,8 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
             TYPE_ITEM -> TransactionViewHolder.create(parent)
             TYPE_LOADER -> LoaderViewHolder.create(parent)
             else -> throw IllegalArgumentException("Invalid view type: $viewType")
-  
+        }
+    }
+
+    override fun onBindViewHolder(holder: RootViewHolder, position: Int) {
+      
