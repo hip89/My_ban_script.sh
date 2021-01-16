@@ -25,4 +25,8 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
             is LoaderViewHolder -> {
                 // Nothing to do here.
             }
-        
+        }
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        retur
