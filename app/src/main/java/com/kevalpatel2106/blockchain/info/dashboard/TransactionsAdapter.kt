@@ -21,4 +21,8 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
             is TransactionViewHolder -> {
                 holder.bind(getItem(position))
                 if (position == itemCount - 1) onLoadMore.invoke()
-            
+            }
+            is LoaderViewHolder -> {
+                // Nothing to do here.
+            }
+        
