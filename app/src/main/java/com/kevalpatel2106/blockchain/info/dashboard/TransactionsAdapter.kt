@@ -19,4 +19,6 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
     override fun onBindViewHolder(holder: RootViewHolder, position: Int) {
         when (holder) {
             is TransactionViewHolder -> {
-                holder.bind(g
+                holder.bind(getItem(position))
+                if (position == itemCount - 1) onLoadMore.invoke()
+            
