@@ -34,4 +34,6 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
 
     companion object {
         private const val TYPE_LOADER = 0
-        private 
+        private const val TYPE_ITEM = 1
+
+        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Transac
