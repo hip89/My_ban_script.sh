@@ -29,4 +29,5 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
     }
 
     override fun getItemViewType(position: Int): Int {
-        retur
+        return if (getItem(position) == Transaction.EMPTY_TRANSACTION) TYPE_LOADER else TYPE_ITEM
+  
