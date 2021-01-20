@@ -36,4 +36,5 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
         private const val TYPE_LOADER = 0
         private const val TYPE_ITEM = 1
 
-        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Transac
+        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Transaction>() {
+            override fun areContentsTheSame(oldItem: Transaction, newItem: 
