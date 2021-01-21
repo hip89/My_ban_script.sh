@@ -41,4 +41,6 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
                 return oldItem.hash == newItem.hash
             }
 
-            override fun areItemsTheSame(oldItem: Transaction, newItem: Transaction): Boo
+            override fun areItemsTheSame(oldItem: Transaction, newItem: Transaction): Boolean {
+                return (oldItem.hash == newItem.hash) && (oldItem.time == newItem.time)
+   
