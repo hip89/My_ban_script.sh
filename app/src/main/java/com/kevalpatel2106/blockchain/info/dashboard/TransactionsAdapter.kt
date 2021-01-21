@@ -37,4 +37,8 @@ class TransactionsAdapter(private val onLoadMore: () -> Unit) :
         private const val TYPE_ITEM = 1
 
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Transaction>() {
-            override fun areContentsTheSame(oldItem: Transaction, newItem: 
+            override fun areContentsTheSame(oldItem: Transaction, newItem: Transaction): Boolean {
+                return oldItem.hash == newItem.hash
+            }
+
+    
