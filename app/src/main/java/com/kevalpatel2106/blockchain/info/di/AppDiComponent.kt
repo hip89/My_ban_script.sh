@@ -9,4 +9,5 @@ package com.kevalpatel2106.blockchain.info.di
 
 import android.app.Application
 import com.kevalpatel2106.blockchain.info.BIApplication
-import com.kevalpatel2106.blockchain.info.dashboard
+import com.kevalpatel2106.blockchain.info.dashboard.DashboardActivity
+import com.kevalpatel2106.blockchain.info.repository.SharedPrefsProvide
