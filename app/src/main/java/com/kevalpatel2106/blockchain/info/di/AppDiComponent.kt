@@ -8,4 +8,5 @@
 package com.kevalpatel2106.blockchain.info.di
 
 import android.app.Application
-import com.kevalpatel2
+import com.kevalpatel2106.blockchain.info.BIApplication
+import com.kevalpatel2106.blockchain.info.dashboard
