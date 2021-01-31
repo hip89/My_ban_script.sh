@@ -16,4 +16,4 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 /**
- * 
+ * Dagger [Component] for whole application. This component provides repository, view model and other
