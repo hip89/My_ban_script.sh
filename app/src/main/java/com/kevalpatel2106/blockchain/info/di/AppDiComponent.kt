@@ -17,3 +17,6 @@ import javax.inject.Singleton
 
 /**
  * Dagger [Component] for whole application. This component provides repository, view model and other
+ * root component dependencies.
+ *
+ * @author <a href="https://github.c
