@@ -22,4 +22,7 @@ import javax.inject.Singleton
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
 @Singleton
-@Component(modules = [ViewModelF
+@Component(modules = [ViewModelFactoryModule::class, AppDiModule::class])
+internal interface AppDiComponent {
+
+    fun inject(d
