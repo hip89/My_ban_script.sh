@@ -19,4 +19,7 @@ import javax.inject.Singleton
  * Dagger [Component] for whole application. This component provides repository, view model and other
  * root component dependencies.
  *
- * @author <a href="https://github.c
+ * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
+ */
+@Singleton
+@Component(modules = [ViewModelF
