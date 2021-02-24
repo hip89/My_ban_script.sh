@@ -29,4 +29,6 @@ internal interface AppDiComponent {
 
     fun inject(application: BIApplication)
 
-   
+    fun getApplication(): Application
+
+    fun getSharedPreferences(): SharedPrefsProvider
