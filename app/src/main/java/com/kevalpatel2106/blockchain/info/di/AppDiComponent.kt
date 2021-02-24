@@ -36,4 +36,6 @@ internal interface AppDiComponent {
     @Named(AppDiModule.BASE_URL)
     fun getBaseUrl(): String
 
-    @Named(AppDiMo
+    @Named(AppDiModule.ENABLE_LOG)
+    fun provideIsEnableLogging(): Boolean
+}
