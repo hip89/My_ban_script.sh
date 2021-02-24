@@ -25,4 +25,8 @@ import javax.inject.Singleton
 @Component(modules = [ViewModelFactoryModule::class, AppDiModule::class])
 internal interface AppDiComponent {
 
-    fun inject(d
+    fun inject(dashboardActivity: DashboardActivity)
+
+    fun inject(application: BIApplication)
+
+   
