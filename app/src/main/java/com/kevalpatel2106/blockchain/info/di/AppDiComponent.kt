@@ -32,3 +32,8 @@ internal interface AppDiComponent {
     fun getApplication(): Application
 
     fun getSharedPreferences(): SharedPrefsProvider
+
+    @Named(AppDiModule.BASE_URL)
+    fun getBaseUrl(): String
+
+    @Named(AppDiMo
