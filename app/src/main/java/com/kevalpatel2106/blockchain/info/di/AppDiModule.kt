@@ -6,4 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.kevalpatel
+package com.kevalpatel2106.blockchain.info.di
+
+import android.app.Application
+import android.prefe
