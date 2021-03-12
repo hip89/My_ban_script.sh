@@ -13,4 +13,9 @@ import android.preference.PreferenceManager
 import com.kevalpatel2106.blockchain.info.BuildConfig
 import com.kevalpatel2106.blockchain.info.repository.SharedPrefsProvider
 import dagger.Module
-import dagger.Provid
+import dagger.Provides
+import javax.inject.Named
+import javax.inject.Singleton
+
+/**
+ * Dagger [Module] to provide ap
