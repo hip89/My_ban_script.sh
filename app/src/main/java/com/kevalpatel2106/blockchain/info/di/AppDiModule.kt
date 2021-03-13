@@ -24,4 +24,7 @@ import javax.inject.Singleton
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
 @Module
-internal clas
+internal class AppDiModule(private val application: Application) {
+
+    companion object {
+        const v
