@@ -18,4 +18,5 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 /**
- * Dagger [Module] to provide ap
+ * Dagger [Module] to provide application, database and network base url dependencies. In the test
+ * environment you can mo
