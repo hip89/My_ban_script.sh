@@ -19,4 +19,6 @@ import javax.inject.Singleton
 
 /**
  * Dagger [Module] to provide application, database and network base url dependencies. In the test
- * environment you can mo
+ * environment you can mock this dependencies and inject mocks into the application.
+ *
+ * @author <a href="http
