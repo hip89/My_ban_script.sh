@@ -27,4 +27,9 @@ import javax.inject.Singleton
 internal class AppDiModule(private val application: Application) {
 
     companion object {
-        const v
+        const val BASE_URL = "base_url"
+        const val ENABLE_LOG = "enable_log"
+    }
+
+    @Singleton
+    @Pro
