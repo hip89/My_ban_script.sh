@@ -32,4 +32,7 @@ internal class AppDiModule(private val application: Application) {
     }
 
     @Singleton
-    @Pro
+    @Provides
+    fun provideApplication(): Application {
+        return application
+    }
