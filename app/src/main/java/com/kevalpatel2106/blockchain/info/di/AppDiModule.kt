@@ -36,3 +36,10 @@ internal class AppDiModule(private val application: Application) {
     fun provideApplication(): Application {
         return application
     }
+
+    /**
+     * Base url of the API endpoints.
+     */
+    @Singleton
+    @Provides
+    @Name
