@@ -42,4 +42,7 @@ internal class AppDiModule(private val application: Application) {
      */
     @Singleton
     @Provides
-    @Name
+    @Named(BASE_URL)
+    fun provideBaseUrl(): String {
+        return BuildConfig.BASE_URL
+    
