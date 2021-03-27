@@ -45,4 +45,9 @@ internal class AppDiModule(private val application: Application) {
     @Named(BASE_URL)
     fun provideBaseUrl(): String {
         return BuildConfig.BASE_URL
-    
+    }
+
+    @Provides
+    @Singleton
+    @Named(ENABLE_LOG)
+    internal fun provideIsEnableLogging(): Bool
