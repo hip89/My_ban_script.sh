@@ -55,3 +55,5 @@ internal class AppDiModule(private val application: Application) {
     }
 
     @Provides
+    @Singleton
+    internal fun provideSharedPreference(application: Application): SharedPrefsP
