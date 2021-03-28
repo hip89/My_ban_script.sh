@@ -57,4 +57,6 @@ internal class AppDiModule(private val application: Application) {
     @Provides
     @Singleton
     internal fun provideSharedPreference(application: Application): SharedPrefsProvider {
-        return SharedPrefsProvider(PreferenceManager.getDefaultSharedPreferences(ap
+        return SharedPrefsProvider(PreferenceManager.getDefaultSharedPreferences(application))
+    }
+}
