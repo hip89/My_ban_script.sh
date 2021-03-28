@@ -50,4 +50,8 @@ internal class AppDiModule(private val application: Application) {
     @Provides
     @Singleton
     @Named(ENABLE_LOG)
-    internal fun provideIsEnableLogging(): Bool
+    internal fun provideIsEnableLogging(): Boolean {
+        return BuildConfig.BUILD_TYPE.contains("debug", true)
+    }
+
+    @Provides
