@@ -10,4 +10,8 @@ package com.kevalpatel2106.blockchain.info.repository
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import com.f2prateek.rx.preferences2.RxSharedPre
+import com.f2prateek.rx.preferences2.RxSharedPreferences
+import io.reactivex.Observable
+
+/**
+ * Class contains all the helper f
