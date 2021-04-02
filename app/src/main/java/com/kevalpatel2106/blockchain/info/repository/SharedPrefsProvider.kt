@@ -14,4 +14,6 @@ import com.f2prateek.rx.preferences2.RxSharedPreferences
 import io.reactivex.Observable
 
 /**
- * Class contains all the helper f
+ * Class contains all the helper functions to deal with shared prefs.
+ *
+ * @author <a href="https://github.com/keval
