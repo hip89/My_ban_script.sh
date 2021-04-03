@@ -16,4 +16,6 @@ import io.reactivex.Observable
 /**
  * Class contains all the helper functions to deal with shared prefs.
  *
- * @author <a href="https://github.com/keval
+ * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
+ */
+class SharedPrefsProvider(private val sharedPreference: Share
