@@ -18,4 +18,5 @@ import io.reactivex.Observable
  *
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
-class SharedPrefsProvider(private val sharedPreference: Share
+class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
+    private val rxPreferences = RxSharedPreferences.create(sha
