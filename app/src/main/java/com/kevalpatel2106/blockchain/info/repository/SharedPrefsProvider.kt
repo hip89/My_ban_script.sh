@@ -22,4 +22,8 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
     private val rxPreferences = RxSharedPreferences.create(sharedPreference)
 
     /**
-     * Remove and clear data from preferences for given fiel
+     * Remove and clear data from preferences for given field
+     *
+     * @param key key of preference field to remove
+     */
+    fun
