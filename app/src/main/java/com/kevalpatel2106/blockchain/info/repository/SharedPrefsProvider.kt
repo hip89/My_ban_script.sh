@@ -27,4 +27,9 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
      * @param key key of preference field to remove
      */
     fun removePreferences(key: String) {
-        sharedPreference.edit { remove(key)
+        sharedPreference.edit { remove(key) }
+    }
+
+    fun removeAll() = sharedPreference.edit().clear().apply()
+
+    fun sa
