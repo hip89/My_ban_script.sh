@@ -33,4 +33,8 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
     fun removeAll() = sharedPreference.edit().clear().apply()
 
     fun savePreferences(save: (edit: SharedPreferences.Editor) -> Unit) {
-        sharedPreferenc
+        sharedPreference.edit { save.invoke(this) }
+    }
+
+    @JvmOverloads
+    fun observeStringFromPreference(ke
