@@ -39,4 +39,5 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
     @JvmOverloads
     fun observeStringFromPreference(key: String, defVal: String? = null): Observable<String> {
         return run {
-            if (
+            if (defVal != null) {
+                rxPreferences.getString(key, defVal)
