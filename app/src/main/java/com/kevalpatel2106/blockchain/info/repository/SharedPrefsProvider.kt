@@ -44,4 +44,8 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
             } else {
                 rxPreferences.getString(key)
             }
-     
+        }.asObservable()
+    }
+
+    @JvmOverloads
+    fun observeBoolFromPreference(key: 
