@@ -41,3 +41,7 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
         return run {
             if (defVal != null) {
                 rxPreferences.getString(key, defVal)
+            } else {
+                rxPreferences.getString(key)
+            }
+     
