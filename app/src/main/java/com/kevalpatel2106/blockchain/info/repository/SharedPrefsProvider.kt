@@ -49,4 +49,8 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
 
     @JvmOverloads
     fun observeBoolFromPreference(key: String, defVal: Boolean = false): Observable<Boolean> {
-        return rxPr
+        return rxPreferences.getBoolean(key, defVal).asObservable()
+    }
+
+    @JvmOverloads
+    fun observeLongF
