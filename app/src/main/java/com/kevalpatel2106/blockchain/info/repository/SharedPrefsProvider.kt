@@ -54,4 +54,8 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
 
     @JvmOverloads
     fun observeLongFromPreference(key: String, defVal: Long = -1): Observable<Long> {
-        return rxPreferences.get
+        return rxPreferences.getLong(key, defVal).asObservable()
+    }
+
+    @JvmOverloads
+    fun observ
