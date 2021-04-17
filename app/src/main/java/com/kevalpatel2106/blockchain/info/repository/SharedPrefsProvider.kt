@@ -58,4 +58,5 @@ class SharedPrefsProvider(private val sharedPreference: SharedPreferences) {
     }
 
     @JvmOverloads
-    fun observ
+    fun observeIntFromPreference(key: String, defVal: Int = -1): Observable<Int> {
+     
