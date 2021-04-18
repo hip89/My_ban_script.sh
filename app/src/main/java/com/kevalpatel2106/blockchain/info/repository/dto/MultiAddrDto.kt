@@ -4,4 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class MultiAddrDto(
         @field:SerializedName("wallet")
-        val wa
+        val walletDto: WalletDto,
+
+        @field:SerializedName("txs")
+        val transactions: List<Tra
