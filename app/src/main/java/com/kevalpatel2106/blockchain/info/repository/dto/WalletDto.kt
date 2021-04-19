@@ -7,4 +7,7 @@ data class WalletDto(
         @field:SerializedName("n_tx_filtered")
         val nTxFiltered: Long,
 
-        @field
+        @field:SerializedName("final_balance")
+        val finalBalance: Long,
+
+        @field:Serializ
