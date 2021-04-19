@@ -7,4 +7,5 @@ data class MultiAddrDto(
         val walletDto: WalletDto,
 
         @field:SerializedName("txs")
-        val transactions: List<Tra
+        val transactions: List<TransactionDto>
+)
