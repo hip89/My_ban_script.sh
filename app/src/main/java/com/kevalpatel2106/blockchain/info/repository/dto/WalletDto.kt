@@ -4,3 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class WalletDto(
 
+        @field:SerializedName("n_tx_filtered")
+        val nTxFiltered: Long,
+
+        @field
