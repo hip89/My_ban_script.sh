@@ -10,4 +10,8 @@ data class WalletDto(
         @field:SerializedName("final_balance")
         val finalBalance: Long,
 
-        @field:Serializ
+        @field:SerializedName("n_tx")
+        val nTx: Long,
+
+        @field:SerializedName("total_sent")
+        val t
