@@ -18,3 +18,4 @@ data class WalletDto(
 
         @field:SerializedName("total_received")
         val totalReceived: Long
+)
