@@ -59,3 +59,34 @@ class Network @Inject constructor(
      * [GsonConverterFactory] to parse json responses using [sGson].
      *
      * @see sGson
+     */
+    private val gsonConverterFactory = GsonConverterFactory.create(sGson)
+
+    init {
+        val httpClientBuilder = OkHttpClient.Builder()
+                .readTimeout(NetworkConfig.READ_TIMEOUT, TimeUnit.MINUTES)
+                .writeTimeout(NetworkConfig.WRITE_TIMEOUT, TimeUnit.MINUTES)
+                .connectTimeout(NetworkConfig.CONNECTION_TIMEOUT, TimeUnit.MINUTES)
+
+        //Add debug interceptors
+        if (enableLog) {
+            httpClientBuilder.addInterceptor(HttpLoggingInterceptor()
+                    .apply { level = HttpLoggingInterceptor.Level.BODY }
+            )
+        }
+
+        okHttpClient = httpClientBuilder.build()
+    }
+
+    /**
+     * Get the retrofit client instance for given [baseUrl].
+     */
+    fun getRetrofitClient(): Retrofit {
+        return Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .client(okHttpClient)
+                .addCallAdapterFactory(rxCallAdapterFactory)
+                .addConverterFactory(gsonConverterFactory)
+                .build()
+    }
+}
