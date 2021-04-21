@@ -14,4 +14,7 @@ data class WalletDto(
         val nTx: Long,
 
         @field:SerializedName("total_sent")
-        val t
+        val totalSent: Long,
+
+        @field:SerializedName("total_received")
+        val totalReceived: Long
