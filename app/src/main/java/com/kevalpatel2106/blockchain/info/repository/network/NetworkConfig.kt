@@ -9,4 +9,9 @@
 package com.kevalpatel2106.blockchain.info.repository.network
 
 /**
- * Network related configura
+ * Network related configurations.
+ *
+ * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
+ */
+
+intern
