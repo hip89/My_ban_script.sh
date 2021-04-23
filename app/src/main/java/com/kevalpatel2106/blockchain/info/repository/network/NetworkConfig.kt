@@ -6,4 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package 
+package com.kevalpatel2106.blockchain.info.repository.network
+
+/**
+ * Network related configura
