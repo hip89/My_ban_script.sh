@@ -14,4 +14,9 @@ package com.kevalpatel2106.blockchain.info.repository.network
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
 
-intern
+internal object NetworkConfig {
+
+    /**
+     * Request read timeout in minutes.
+     */
+    internal con
