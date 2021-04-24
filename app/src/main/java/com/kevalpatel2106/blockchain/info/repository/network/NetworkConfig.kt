@@ -19,4 +19,9 @@ internal object NetworkConfig {
     /**
      * Request read timeout in minutes.
      */
-    internal con
+    internal const val READ_TIMEOUT = 1L
+
+    /**
+     * Request write timeout in minutes.
+     */
+    internal const val WRIT
