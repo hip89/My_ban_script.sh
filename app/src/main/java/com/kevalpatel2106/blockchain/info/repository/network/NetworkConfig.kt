@@ -29,4 +29,5 @@ internal object NetworkConfig {
     /**
      * Network connection timeout in minutes.
      */
-    internal 
+    internal const val CONNECTION_TIMEOUT = 1L
+}
