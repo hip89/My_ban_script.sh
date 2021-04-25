@@ -24,4 +24,9 @@ internal object NetworkConfig {
     /**
      * Request write timeout in minutes.
      */
-    internal const val WRIT
+    internal const val WRITE_TIMEOUT = 1L
+
+    /**
+     * Network connection timeout in minutes.
+     */
+    internal 
