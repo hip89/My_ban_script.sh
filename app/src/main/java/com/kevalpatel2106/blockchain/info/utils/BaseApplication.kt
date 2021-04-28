@@ -15,4 +15,6 @@ import com.kevalpatel2106.blockchain.info.di.AppDiComponent
 /**
  * Base [Application] that can be extended in different build variants.
  *
- *
+ * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
+ */
+internal a
