@@ -10,4 +10,9 @@ package com.kevalpatel2106.blockchain.info.utils
 
 import android.app.Application
 import android.content.Context
-import com.kevalpatel2106.blockchain.info
+import com.kevalpatel2106.blockchain.info.di.AppDiComponent
+
+/**
+ * Base [Application] that can be extended in different build variants.
+ *
+ *
