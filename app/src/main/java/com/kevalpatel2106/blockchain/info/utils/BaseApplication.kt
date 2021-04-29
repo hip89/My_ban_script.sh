@@ -17,4 +17,7 @@ import com.kevalpatel2106.blockchain.info.di.AppDiComponent
  *
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
-internal a
+internal abstract class BaseApplication : Application() {
+
+    /**
+     * Dagger component to provide t
