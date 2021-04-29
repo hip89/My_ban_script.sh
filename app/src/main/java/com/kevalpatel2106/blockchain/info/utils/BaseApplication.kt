@@ -20,4 +20,8 @@ import com.kevalpatel2106.blockchain.info.di.AppDiComponent
 internal abstract class BaseApplication : Application() {
 
     /**
-     * Dagger component to provide t
+     * Dagger component to provide the root objects of the dependency graph.
+     *
+     * @see AppDiComponent
+     */
+    lat
