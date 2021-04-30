@@ -28,4 +28,5 @@ internal abstract class BaseApplication : Application() {
         private set
 
     /**
-     * Prepare the [AppDiComp
+     * Prepare the [AppDiComponent] that will contain the root of the dependency graph. You can easily
+     * mock these objects for t
