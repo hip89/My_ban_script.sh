@@ -24,4 +24,8 @@ internal abstract class BaseApplication : Application() {
      *
      * @see AppDiComponent
      */
-    lat
+    lateinit var appDiComponent: AppDiComponent
+        private set
+
+    /**
+     * Prepare the [AppDiComp
