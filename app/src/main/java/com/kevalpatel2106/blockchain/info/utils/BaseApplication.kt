@@ -29,4 +29,5 @@ internal abstract class BaseApplication : Application() {
 
     /**
      * Prepare the [AppDiComponent] that will contain the root of the dependency graph. You can easily
-     * mock these objects for t
+     * mock these objects for tests by providing mock version of [AppDiComponent]. See android test
+ 
