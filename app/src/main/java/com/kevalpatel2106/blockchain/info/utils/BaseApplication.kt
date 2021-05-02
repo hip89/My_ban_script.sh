@@ -32,4 +32,8 @@ internal abstract class BaseApplication : Application() {
      * mock these objects for tests by providing mock version of [AppDiComponent]. See android test
      * source for detail.
      */
-    protected abstract fun prepareAppComponent(): AppDiCompone
+    protected abstract fun prepareAppComponent(): AppDiComponent
+
+    /**
+     * Inject [AppDiComponent] into the class that inherits [BaseApplication].
+     
