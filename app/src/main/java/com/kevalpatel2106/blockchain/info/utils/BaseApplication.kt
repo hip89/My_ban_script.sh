@@ -39,4 +39,8 @@ internal abstract class BaseApplication : Application() {
      */
     protected abstract fun injectRootComponent()
 
-    override fun onCreate()
+    override fun onCreate() {
+        super.onCreate()
+
+        //Create app component
+        appDiComponent = pr
