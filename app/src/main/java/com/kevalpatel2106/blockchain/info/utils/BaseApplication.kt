@@ -36,4 +36,7 @@ internal abstract class BaseApplication : Application() {
 
     /**
      * Inject [AppDiComponent] into the class that inherits [BaseApplication].
-     
+     */
+    protected abstract fun injectRootComponent()
+
+    override fun onCreate()
