@@ -43,4 +43,11 @@ internal abstract class BaseApplication : Application() {
         super.onCreate()
 
         //Create app component
-        appDiComponent = pr
+        appDiComponent = prepareAppComponent()
+
+        //Inject dagger
+        injectRootComponent()
+    }
+}
+
+internal f
