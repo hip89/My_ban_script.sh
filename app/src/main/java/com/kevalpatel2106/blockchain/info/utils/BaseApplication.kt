@@ -50,4 +50,4 @@ internal abstract class BaseApplication : Application() {
     }
 }
 
-internal fun Context.getAppComponent() = (applicationContext as BaseApplication).appDiCompon
+internal fun Context.getAppComponent() = (applicationContext as BaseApplication).appDiComponent
