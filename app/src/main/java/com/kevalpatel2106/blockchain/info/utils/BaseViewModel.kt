@@ -12,4 +12,9 @@ import androidx.annotation.CallSuper
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable
-import io.rea
+import io.reactivex.disposables.Disposable
+
+/**
+ * Base class for [ViewModel].
+ *
+ * @author <a hre
