@@ -17,4 +17,6 @@ import io.reactivex.disposables.Disposable
 /**
  * Base class for [ViewModel].
  *
- * @author <a hre
+ * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
+ */
+abstract class BaseViewModel : Vi
