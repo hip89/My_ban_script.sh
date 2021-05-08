@@ -19,4 +19,7 @@ import io.reactivex.disposables.Disposable
  *
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
  */
-abstract class BaseViewModel : Vi
+abstract class BaseViewModel : ViewModel() {
+
+    /**
+     * [CompositeDisposable] to hold all the disposables from Rx an
