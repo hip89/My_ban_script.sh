@@ -22,4 +22,7 @@ import io.reactivex.disposables.Disposable
 abstract class BaseViewModel : ViewModel() {
 
     /**
-     * [CompositeDisposable] to hold all the disposables from Rx an
+     * [CompositeDisposable] to hold all the disposables from Rx and repository.
+     */
+    @VisibleForTesting
+    internal val compositeDisposable: CompositeDisposable 
