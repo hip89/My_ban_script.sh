@@ -25,4 +25,7 @@ abstract class BaseViewModel : ViewModel() {
      * [CompositeDisposable] to hold all the disposables from Rx and repository.
      */
     @VisibleForTesting
-    internal val compositeDisposable: CompositeDisposable 
+    internal val compositeDisposable: CompositeDisposable = CompositeDisposable()
+
+    /**
+     * Add new [Disposable] to be dispose when the view mode
