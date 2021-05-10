@@ -36,3 +36,5 @@ abstract class BaseViewModel : ViewModel() {
     override fun onCleared() {
         super.onCleared()
 
+        //Delete all the API connections.
+        compositeDisposable.dispose()
