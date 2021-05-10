@@ -30,4 +30,9 @@ abstract class BaseViewModel : ViewModel() {
     /**
      * Add new [Disposable] to be dispose when the view model cleared.
      */
-    protected fun addDisposable(disposable: Disposable) = compositeD
+    protected fun addDisposable(disposable: Disposable) = compositeDisposable.add(disposable)
+
+    @CallSuper
+    override fun onCleared() {
+        super.onCleared()
+
