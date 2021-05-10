@@ -28,4 +28,6 @@ abstract class BaseViewModel : ViewModel() {
     internal val compositeDisposable: CompositeDisposable = CompositeDisposable()
 
     /**
-     * Add new [Disposable] to be dispose when the view mode
+     * Add new [Disposable] to be dispose when the view model cleared.
+     */
+    protected fun addDisposable(disposable: Disposable) = compositeD
