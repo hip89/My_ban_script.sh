@@ -38,3 +38,5 @@ abstract class BaseViewModel : ViewModel() {
 
         //Delete all the API connections.
         compositeDisposable.dispose()
+    }
+}
