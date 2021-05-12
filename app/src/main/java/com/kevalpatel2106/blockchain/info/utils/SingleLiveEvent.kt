@@ -8,4 +8,5 @@
 
 package com.kevalpatel2106.blockchain.info.utils
 
-impor
+import androidx.annotation.MainThread
+import androidx.lifecycle.LifecycleOw
