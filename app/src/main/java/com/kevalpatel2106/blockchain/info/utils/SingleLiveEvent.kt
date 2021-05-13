@@ -20,4 +20,8 @@ import java.util.concurrent.atomic.AtomicBoolean
  *
  *
  * This avoids a common problem with events: on configuration change (like rotation) an update
- * can be emitted if the observer is active. This LiveData only calls t
+ * can be emitted if the observer is active. This LiveData only calls the observable if there's an
+ * explicit call to setValue() or call().
+ *
+ *
+ * Note that only one
