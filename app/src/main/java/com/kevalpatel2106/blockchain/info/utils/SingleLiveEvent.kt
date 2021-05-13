@@ -19,4 +19,5 @@ import java.util.concurrent.atomic.AtomicBoolean
  * navigation and Snackbar messages.
  *
  *
- * This avoids a common problem with events: on configuration change (like rotation) a
+ * This avoids a common problem with events: on configuration change (like rotation) an update
+ * can be emitted if the observer is active. This LiveData only calls t
