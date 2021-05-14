@@ -27,4 +27,4 @@ import java.util.concurrent.atomic.AtomicBoolean
  * Note that only one observer is going to be notified of changes.
  *
  * @author <a href="https://github.com/kevalpatel2106">kevalpatel2106</a>
- * @see [Original Source](https://github.com/googlesam
+ * @see [Original Source](https://github.com/googlesamples/android-architecture/blob/dev-todo-mvvm-live/todoapp/app/src/main/java/com/example/and
