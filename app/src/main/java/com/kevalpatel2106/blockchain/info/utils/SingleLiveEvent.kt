@@ -38,4 +38,11 @@ open class SingleLiveEvent<T> : MutableLiveData<T>() {
         // Observe the internal MutableLiveData
         super.observe(owner, Observer<T> { t ->
             if (mPending.compareAndSet(true, false)) {
-                t?.let { observer.onCha
+                t?.let { observer.onChanged(it) }
+            }
+        })
+    }
+
+    @MainThread
+    override fun setValue(t: T?) {
+        mPending.set(tru
