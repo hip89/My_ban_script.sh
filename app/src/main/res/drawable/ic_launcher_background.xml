@@ -39,4 +39,5 @@
           android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
     <path android:fillColor="#00000000" android:pathData="M0,59L108,59"
           android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
-    <path android:fillColor="
+    <path android:fillColor="#00000000" android:pathData="M0,69L108,69"
+          android:strokeColor="#33FFFFFF" 
