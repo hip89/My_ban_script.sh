@@ -43,3 +43,18 @@
                 android:layout_marginStart="@dimen/spacing_small"
                 android:layout_marginEnd="@dimen/spacing_small"
                 android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/transaction_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/row_transaction"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--1. Loader-->
+        <ProgressBar
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"/>
+    </ViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
