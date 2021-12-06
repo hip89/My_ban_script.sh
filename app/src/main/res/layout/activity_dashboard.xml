@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@android:color/white"
+        android:id="@+id/dashboard_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".dashboard.DashboardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/dashboard_appbar_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/dashboard_collapsing_toolbar"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_height="match_parent">
+
+            <include layout="@layout/wallet_info_card"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ViewFlipper
+            android:id="@+id/dashboard_flipper"
+            android:layout_width="match_parent"
+            app:behavior_overlapTop="@dimen/spacing_xxlarge"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="match_parent">
+
+        <!--0. List-->
+        <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/material_card_width"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/spacing_nano"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/dashboard_list_card"
+                app:cardElevation="@dimen/spacing_pico"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:layout_height="wrap_content">
