@@ -8,4 +8,5 @@
         android:layout_height="wrap_content"
         android:focusable="true">
 
-    <androidx.appcompat.w
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/spacing_large
