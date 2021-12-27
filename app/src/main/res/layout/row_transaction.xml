@@ -11,4 +11,6 @@
     <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/spacing_large"
             android:layout_height="@dimen/spacing_large"
-            android:id="@+id/tr
+            android:id="@+id/transaction_type_iv"
+            tools:src="@drawable/ic_left_up_arrow"
+            ap
