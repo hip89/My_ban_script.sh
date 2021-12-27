@@ -13,4 +13,5 @@
             android:layout_height="@dimen/spacing_large"
             android:id="@+id/transaction_type_iv"
             tools:src="@drawable/ic_left_up_arrow"
-            ap
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintT
