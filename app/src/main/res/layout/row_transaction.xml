@@ -9,4 +9,6 @@
         android:focusable="true">
 
     <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/spacing_large
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"
+            android:id="@+id/tr
