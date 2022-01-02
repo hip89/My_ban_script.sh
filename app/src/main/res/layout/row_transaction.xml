@@ -15,4 +15,7 @@
             tools:src="@drawable/ic_left_up_arrow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/hash_tv"
-            app:layout_constraintBottom_toBottomOf="@+id/fin
+            app:layout_constraintBottom_toBottomOf="@+id/final_balance_tv"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:
