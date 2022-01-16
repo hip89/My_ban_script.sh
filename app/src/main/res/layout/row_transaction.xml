@@ -20,4 +20,6 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:singleLine="true"
             style="@style/MediumText.Primary"
-            tools:te
+            tools:text="@tools:sample/lorem/random"
+            android:layout_width="0dp"
+            android
