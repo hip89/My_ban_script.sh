@@ -22,4 +22,5 @@
             style="@style/MediumText.Primary"
             tools:text="@tools:sample/lorem/random"
             android:layout_width="0dp"
-            android
+            android:layout_height="wrap_content"
+            android:id="@+id/hash_tv" app:layou
