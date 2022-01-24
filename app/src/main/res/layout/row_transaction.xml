@@ -23,4 +23,5 @@
             tools:text="@tools:sample/lorem/random"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/hash_tv" app:layou
+            android:id="@+id/hash_tv" app:layout_constraintStart_toEndOf="@+id/transaction_type_iv"
+            android:layou
