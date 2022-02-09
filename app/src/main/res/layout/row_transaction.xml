@@ -25,4 +25,5 @@
             android:layout_height="wrap_content"
             android:id="@+id/hash_tv" app:layout_constraintStart_toEndOf="@+id/transaction_type_iv"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
-            app:layout_con
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_am
