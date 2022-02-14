@@ -33,4 +33,6 @@
             android:id="@+id/transaction_amount_tv"
             android:layout_width="wrap_content"
             style="@style/SmallText.Accent"
-   
+            android:textAllCaps="true"
+            android:singleLine="true"
+            tools:text="0
