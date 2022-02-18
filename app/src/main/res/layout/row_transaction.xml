@@ -35,4 +35,6 @@
             style="@style/SmallText.Accent"
             android:textAllCaps="true"
             android:singleLine="true"
-            tools:text="0
+            tools:text="0.0002 BTC"
+            android:gravity="center"
+            android:layout_height="wrap_
