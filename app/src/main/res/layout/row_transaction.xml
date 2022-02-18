@@ -37,4 +37,6 @@
             android:singleLine="true"
             tools:text="0.0002 BTC"
             android:gravity="center"
-            android:layout_height="wrap_
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_co
