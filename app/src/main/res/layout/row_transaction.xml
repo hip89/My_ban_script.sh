@@ -44,4 +44,6 @@
 
     <TextView
             style="@style/SmallText.Secondary"
-            tools:text="B
+            tools:text="Balance: 0.0002 BTC"
+            android:layout_width="0dp"
+            android:layout_height=
