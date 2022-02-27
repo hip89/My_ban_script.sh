@@ -46,4 +46,5 @@
             style="@style/SmallText.Secondary"
             tools:text="Balance: 0.0002 BTC"
             android:layout_width="0dp"
-            android:layout_height=
+            android:layout_height="wrap_content"
+            android:id="@+id/final_balance_tv" android:layout_marginTop="
