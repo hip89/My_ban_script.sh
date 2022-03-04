@@ -51,4 +51,8 @@
             app:layout_constraintTop_toBottomOf="@+id/hash_tv"
             app:layout_constraintStart_toEndOf="@+id/transaction_type_iv" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="p
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/hash_tv"/>
+
+    <TextView
+    
