@@ -55,4 +55,6 @@
             app:layout_constraintEnd_toEndOf="@+id/hash_tv"/>
 
     <TextView
-    
+            style="@style/SmallText.Secondary"
+            tools:text="Fee: 0.0002 BTC"
+            android:layout
