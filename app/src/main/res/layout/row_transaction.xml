@@ -62,4 +62,5 @@
             android:id="@+id/fees_tv"
             android:gravity="center"
             android:singleLine="true"
-       
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id
