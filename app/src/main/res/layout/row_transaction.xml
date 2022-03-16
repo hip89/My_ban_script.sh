@@ -59,4 +59,7 @@
             tools:text="Fee: 0.0002 BTC"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/fe
+            android:id="@+id/fees_tv"
+            android:gravity="center"
+            android:singleLine="true"
+       
