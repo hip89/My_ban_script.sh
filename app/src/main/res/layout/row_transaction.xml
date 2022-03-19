@@ -64,4 +64,5 @@
             android:singleLine="true"
             android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="@+id/transaction_amount_tv"
-            app:layout_constraintStart_toStartOf="@+id/tr
+            app:layout_constraintStart_toStartOf="@+id/transaction_amount_tv"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_am
