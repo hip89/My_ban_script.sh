@@ -2,4 +2,5 @@
 <resources>
     <dimen name="dashboard_balance_card_height">200dp</dimen>
     <dimen name="divider_height">1px</dimen>
-    <dimen name="wallet_balance_text_
+    <dimen name="wallet_balance_text_size">34sp</dimen>
+    <dimen name="material_card_width">@dimen/match_parent</
