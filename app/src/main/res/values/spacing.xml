@@ -13,4 +13,6 @@
   -->
 
 <resources>
-    <!--Defaul
+    <!--Default spacings-->
+    <dimen name="spacing_pico">2dp</dimen>
+    <dimen name="spacing_nano">4dp</dimen>
