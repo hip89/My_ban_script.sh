@@ -16,3 +16,6 @@
     <!--Default spacings-->
     <dimen name="spacing_pico">2dp</dimen>
     <dimen name="spacing_nano">4dp</dimen>
+    <dimen name="spacing_micro">8dp</dimen>
+    <dimen name="spacing_small">16dp</dimen>
+    <dime
