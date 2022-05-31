@@ -18,4 +18,6 @@
     <dimen name="spacing_nano">4dp</dimen>
     <dimen name="spacing_micro">8dp</dimen>
     <dimen name="spacing_small">16dp</dimen>
-    <dime
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+    <dimen n
