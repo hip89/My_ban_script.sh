@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<r
+<resources>
+
+    <style name="MediumText.Primary" parent="Base.TextAppearance.AppCompat.Med
