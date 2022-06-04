@@ -6,4 +6,5 @@
         <item name="android:textColorHint">?android:attr/textColorSecondary</item>
     </style>
 
-    <style name="SmallText.Secondary" parent="Base.TextAppearance.AppCompat.
+    <style name="SmallText.Secondary" parent="Base.TextAppearance.AppCompat.Small">
+        <item name="android:textColor">?android:attr/textColorSecondary</it
