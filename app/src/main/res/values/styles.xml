@@ -12,4 +12,6 @@
 
     <style name="LargeText.Accent" parent="Base.TextAppearance.AppCompat.Large">
         <item name="android:textColor">?android:attr/colorAccent</item>
- 
+    </style>
+
+    <style name="SmallText.Accent" parent="Base.TextAppear
