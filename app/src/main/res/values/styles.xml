@@ -10,4 +10,6 @@
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
-    <style name="LargeText.Accent" parent="Base.TextAppearance.
+    <style name="LargeText.Accent" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+ 
