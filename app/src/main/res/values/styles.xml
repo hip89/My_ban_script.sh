@@ -7,4 +7,7 @@
     </style>
 
     <style name="SmallText.Secondary" parent="Base.TextAppearance.AppCompat.Small">
-        <item name="android:textColor">?android:attr/textColorSecondary</it
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="LargeText.Accent" parent="Base.TextAppearance.
