@@ -15,4 +15,7 @@
     </style>
 
     <style name="SmallText.Accent" parent="Base.TextAppearance.AppCompat.Small">
-        <item name="android:textColor">?android:attr/colorA
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
+</resources>
