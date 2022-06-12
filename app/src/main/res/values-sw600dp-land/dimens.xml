@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen nam
+    <dimen name="material_card_width">700dp</dimen>
+</resources>
