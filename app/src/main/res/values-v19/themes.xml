@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme.NoActionbar.Splash">
-        <item name="andr
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTransluce
