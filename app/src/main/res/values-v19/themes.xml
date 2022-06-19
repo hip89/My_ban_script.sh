@@ -2,4 +2,6 @@
 <resources>
     <style name="AppTheme.NoActionbar.Splash">
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTransluce
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+  
