@@ -9,4 +9,4 @@ import org.junit.runners.JUnit4
 @RunWith(JUnit4::class)
 class TransactionTest {
 
-    private val transaction1 = Tr
+    private val transaction1 = Transaction(0, 0, 0, 0, "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a
