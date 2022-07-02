@@ -16,4 +16,4 @@ class TransactionTest {
 
     @Test
     fun givenResultIsNegative_verifyTransactionIsDebit(){
-        val
+        val transaction = Transaction(0, -34255, 0, 0, "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4
