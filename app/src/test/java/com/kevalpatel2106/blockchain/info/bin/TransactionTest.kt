@@ -28,4 +28,5 @@ class TransactionTest {
 
     @Test
     fun givenTransactionFee_verifyFormattedFees(){
- 
+        val fee = 345L
+        val transaction = Transaction(fee, 4255, 0, 0, "00000000000000
