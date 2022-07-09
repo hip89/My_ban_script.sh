@@ -21,4 +21,5 @@ class TransactionTest {
     }
 
     @Test
-    fun givenResult
+    fun givenResultIsPositive_verifyTransactionIsCredit(){
+        val transaction = Transaction(0, 4255, 0, 
