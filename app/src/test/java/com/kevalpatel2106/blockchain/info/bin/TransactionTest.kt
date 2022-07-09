@@ -23,4 +23,9 @@ class TransactionTest {
     @Test
     fun givenResultIsPositive_verifyTransactionIsCredit(){
         val transaction = Transaction(0, 4255, 0, 0, "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1")
-        asse
+        assertFalse(transaction.isDebit)
+    }
+
+    @Test
+    fun givenTransactionFee_verifyFormattedFees(){
+ 
