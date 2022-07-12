@@ -34,4 +34,6 @@ class TransactionTest {
     }
 
     @Test
-    fun givenTransactionBalance_verifyFormattedB
+    fun givenTransactionBalance_verifyFormattedBalance(){
+        val balance = 4566L
+        val transaction = Transaction(345, 4255, ba
