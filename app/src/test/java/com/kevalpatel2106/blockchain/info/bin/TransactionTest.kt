@@ -37,4 +37,7 @@ class TransactionTest {
     fun givenTransactionBalance_verifyFormattedBalance(){
         val balance = 4566L
         val transaction = Transaction(345, 4255, balance, 0, "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1")
-        a
+        assertEquals("${convertToBtc(balance)} BTC", transaction.formattedBalance)
+    }
+
+    @Test
