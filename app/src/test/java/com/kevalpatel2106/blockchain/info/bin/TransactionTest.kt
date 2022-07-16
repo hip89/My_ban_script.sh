@@ -43,4 +43,4 @@ class TransactionTest {
     @Test
     fun givenTransactionResultNegative_verifyFormattedResult(){
         val result = -4566L
- 
+        val transaction = Transaction(345, result, 46565, 0, "0000000000000000005d6b64c157cb6879e
