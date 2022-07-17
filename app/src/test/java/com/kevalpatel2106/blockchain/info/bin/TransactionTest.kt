@@ -48,4 +48,6 @@ class TransactionTest {
     }
 
     @Test
-    fun givenTransactionResultPositive_verifyForma
+    fun givenTransactionResultPositive_verifyFormattedResult(){
+        val result = 4566L
+        val transaction = Transaction(345, result, 46565, 0, "00
