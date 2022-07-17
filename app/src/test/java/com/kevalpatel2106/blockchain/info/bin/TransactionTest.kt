@@ -44,4 +44,8 @@ class TransactionTest {
     fun givenTransactionResultNegative_verifyFormattedResult(){
         val result = -4566L
         val transaction = Transaction(345, result, 46565, 0, "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1")
-        assertEquals("$result SAT", transaction.formatte
+        assertEquals("$result SAT", transaction.formattedResult)
+    }
+
+    @Test
+    fun givenTransactionResultPositive_verifyForma
