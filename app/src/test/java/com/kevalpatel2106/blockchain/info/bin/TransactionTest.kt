@@ -56,4 +56,6 @@ class TransactionTest {
 
     @Test
     fun checkEquals() {
-   
+        assertEquals(transaction1, transaction3)
+        assertNotEquals(transaction1, transaction2)
+ 
