@@ -58,4 +58,8 @@ class TransactionTest {
     fun checkEquals() {
         assertEquals(transaction1, transaction3)
         assertNotEquals(transaction1, transaction2)
- 
+        assertNotEquals(transaction3, transaction2)
+    }
+
+    @Test
+    fun checkHashco
