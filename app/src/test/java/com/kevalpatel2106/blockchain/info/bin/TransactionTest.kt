@@ -63,4 +63,5 @@ class TransactionTest {
 
     @Test
     fun checkHashcode() {
-        assertEquals("0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4
+        assertEquals("0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1".hashCode(), transaction1.hashCode())
+        assertEquals(transaction3.hashCode(), transaction1.hashCo
