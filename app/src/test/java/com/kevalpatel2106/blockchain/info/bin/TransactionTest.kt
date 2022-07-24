@@ -70,4 +70,7 @@ class TransactionTest {
 
     @Test
     fun checkEmptyTransactions() {
-        val transaction = Transaction.EMPTY_TRA
+        val transaction = Transaction.EMPTY_TRANSACTION
+
+        assertTrue(transaction.hash.isEmpty())
+        assertEquals(0, transaction.fe
