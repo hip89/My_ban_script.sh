@@ -67,3 +67,7 @@ class TransactionTest {
         assertEquals(transaction3.hashCode(), transaction1.hashCode())
         assertNotEquals(transaction2.hashCode(), transaction1.hashCode())
     }
+
+    @Test
+    fun checkEmptyTransactions() {
+        val transaction = Transaction.EMPTY_TRA
