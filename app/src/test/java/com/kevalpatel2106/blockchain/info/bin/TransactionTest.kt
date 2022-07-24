@@ -73,4 +73,6 @@ class TransactionTest {
         val transaction = Transaction.EMPTY_TRANSACTION
 
         assertTrue(transaction.hash.isEmpty())
-        assertEquals(0, transaction.fe
+        assertEquals(0, transaction.fee)
+        assertEquals(0, transaction.result)
+        assertEquals(0, transaction
