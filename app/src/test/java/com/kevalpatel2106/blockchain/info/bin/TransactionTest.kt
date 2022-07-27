@@ -75,4 +75,7 @@ class TransactionTest {
         assertTrue(transaction.hash.isEmpty())
         assertEquals(0, transaction.fee)
         assertEquals(0, transaction.result)
-        assertEquals(0, transaction
+        assertEquals(0, transaction.time)
+        assertEquals(0, transaction.balance)
+    }
+}
