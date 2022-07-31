@@ -9,4 +9,6 @@ import org.junit.runners.JUnit4
 @RunWith(JUnit4::class)
 class WalletTest {
 
-    private val wal
+    private val wallet1 = Wallet(0, 0, 0, 0)
+    private val wallet2 = Wallet(10, 0, 0, 0)
+    private val wallet3 = W
