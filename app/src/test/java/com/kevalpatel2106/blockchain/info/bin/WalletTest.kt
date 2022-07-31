@@ -11,4 +11,9 @@ class WalletTest {
 
     private val wallet1 = Wallet(0, 0, 0, 0)
     private val wallet2 = Wallet(10, 0, 0, 0)
-    private val wallet3 = W
+    private val wallet3 = Wallet(0, 0, 0, 0)
+
+    @Test
+    fun checkEquals() {
+        assertEquals(wallet1, wallet3)
+     
