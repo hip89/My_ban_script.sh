@@ -16,4 +16,7 @@ class WalletTest {
     @Test
     fun checkEquals() {
         assertEquals(wallet1, wallet3)
-     
+        assertNotEquals(wallet1, wallet2)
+        assertNotEquals(wallet3, wallet2)
+    }
+
