@@ -20,3 +20,6 @@ class WalletTest {
         assertNotEquals(wallet3, wallet2)
     }
 
+    @Test
+    fun checkHashcode() {
+        assertEquals(wallet3.hashCode(), wall
