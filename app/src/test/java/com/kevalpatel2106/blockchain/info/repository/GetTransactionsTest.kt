@@ -87,3 +87,37 @@ class GetTransactionsTest {
     }
 
     @Test
+    fun givenNoTransactionInPage_whenLoading_checkResponse() {
+        mockServerManager.enqueueResponse(EMPTY_RESPONSE_JSON)
+
+        val testObserver = biRepository.getTransactions("34234756", 200).test()
+
+        testObserver.awaitTerminalEvent()
+
+        testObserver.assertNoErrors()
+            .assertComplete()
+            .assertValueAt(0) { it.first.isEmpty() }
+            .assertValueAt(0) { it.second == NO_OF_TRANSACTIONS }
+    }
+
+    @Test
+    fun given500FromServer_whenLoading_checkResponse() {
+        mockServerManager.enqueueResponse(response = "", responseCode = HttpURLConnection.HTTP_INTERNAL_ERROR)
+
+        val testObserver = biRepository.getTransactions("34234756", 200).test()
+        testObserver.awaitTerminalEvent()
+        testObserver.assertErrorMessage("HTTP 500 Server Error")
+    }
+
+    companion object {
+        private val RESPONSE_JSON: File = File(MockServerManager.getResponsesPath(), "multi_addr_response.json")
+        private val EMPTY_RESPONSE_JSON: File =
+            File(MockServerManager.getResponsesPath(), "multi_addr_empty_response.json")
+
+        private const val NO_OF_TRANSACTIONS = 380L
+        private const val NO_OF_TRANSACTIONS_IN_PAGE = 3
+        private const val FINAL_BALANCE = 621236L
+        private const val TOTAL_RECEIVED = 29715281L
+        private const val TOTAL_SENT = 29094045L
+    }
+}
