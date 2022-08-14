@@ -11,4 +11,7 @@ class TransactionDtoTest{
     @Test
     fun checkConversionToEntity(){
         val fee= 876L
-        val balan
+        val balance= 4775L
+        val result= 36745L
+        val time= System.currentTimeMillis()
+        val hash= "0
