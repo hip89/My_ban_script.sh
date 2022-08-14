@@ -14,4 +14,6 @@ class TransactionDtoTest{
         val balance= 4775L
         val result= 36745L
         val time= System.currentTimeMillis()
-        val hash= "0
+        val hash= "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1"
+
+        val transactionDto = T
