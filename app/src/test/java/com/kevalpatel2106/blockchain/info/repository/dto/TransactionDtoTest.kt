@@ -20,4 +20,6 @@ class TransactionDtoTest{
         val transaction = transactionDto.toEntity()
 
         assertEquals(fee, transaction.fee)
-        asser
+        assertEquals(balance, transaction.balance)
+        assertEquals(result, transaction.result)
+        as
