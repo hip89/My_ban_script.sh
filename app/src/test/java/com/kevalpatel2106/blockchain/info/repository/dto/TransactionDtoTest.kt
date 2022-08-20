@@ -17,4 +17,7 @@ class TransactionDtoTest{
         val hash= "0000000000000000005d6b64c157cb6879edf8d5a19dc1fe96ebb2a37a4d24a1"
 
         val transactionDto = TransactionDto(fee, result, balance, time, hash)
-        val transaction = tra
+        val transaction = transactionDto.toEntity()
+
+        assertEquals(fee, transaction.fee)
+        asser
