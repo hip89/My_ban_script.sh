@@ -22,4 +22,7 @@ class TransactionDtoTest{
         assertEquals(fee, transaction.fee)
         assertEquals(balance, transaction.balance)
         assertEquals(result, transaction.result)
-        as
+        assertEquals(time, transaction.time)
+        assertEquals(hash, transaction.hash)
+    }
+}
