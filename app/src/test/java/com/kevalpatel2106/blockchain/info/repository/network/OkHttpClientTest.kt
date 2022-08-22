@@ -7,4 +7,8 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import 
+import java.io.IOException
+
+@RunWith(JUnit4::class)
+class OkHttpClientTest {
+    private val bas
