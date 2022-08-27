@@ -14,4 +14,7 @@ class OkHttpClientTest {
     private val baseUrl = "http://www.google.com"
     private lateinit var okHttpClient: OkHttpClient
 
-  
+    @Before
+    fun setUp() {
+        okHttpClient = Network(baseUrl, true).okHttpClient
+ 
