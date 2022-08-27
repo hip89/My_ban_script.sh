@@ -17,4 +17,9 @@ class OkHttpClientTest {
     @Before
     fun setUp() {
         okHttpClient = Network(baseUrl, true).okHttpClient
- 
+    }
+
+    @Test
+    @Throws(IOException::class)
+    fun `check read timeout`() {
+    
