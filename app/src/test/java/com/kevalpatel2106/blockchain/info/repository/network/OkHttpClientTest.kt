@@ -22,4 +22,4 @@ class OkHttpClientTest {
     @Test
     @Throws(IOException::class)
     fun `check read timeout`() {
-    
+        Assert.assertEquals(okHttpClient.readTimeoutMillis().toLong(), Netwo
