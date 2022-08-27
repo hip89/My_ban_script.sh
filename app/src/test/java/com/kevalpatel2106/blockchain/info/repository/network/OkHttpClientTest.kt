@@ -11,4 +11,7 @@ import java.io.IOException
 
 @RunWith(JUnit4::class)
 class OkHttpClientTest {
-    private val bas
+    private val baseUrl = "http://www.google.com"
+    private lateinit var okHttpClient: OkHttpClient
+
+  
