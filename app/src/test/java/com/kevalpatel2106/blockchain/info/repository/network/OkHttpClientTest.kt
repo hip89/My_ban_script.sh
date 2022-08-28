@@ -26,4 +26,6 @@ class OkHttpClientTest {
     }
 
     @Test
-    @Throws(IOException::c
+    @Throws(IOException::class)
+    fun `check write timeout`() {
+        Assert.assertEquals(okHttpClient.writeTime
