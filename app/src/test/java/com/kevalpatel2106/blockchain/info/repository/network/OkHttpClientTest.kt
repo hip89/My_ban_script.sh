@@ -32,4 +32,6 @@ class OkHttpClientTest {
     }
 
     @Test
-    @Throw
+    @Throws(IOException::class)
+    fun `check connection timeout`() {
+        Assert.assertEquals(ok
