@@ -34,4 +34,5 @@ class OkHttpClientTest {
     @Test
     @Throws(IOException::class)
     fun `check connection timeout`() {
-        Assert.assertEquals(ok
+        Assert.assertEquals(okHttpClient.connectTimeoutMillis().toLong(), NetworkConfig.CONNECTION_TIMEOUT * 60 * 1000)
+    }
