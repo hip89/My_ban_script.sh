@@ -40,4 +40,5 @@ class OkHttpClientTest {
     @Test
     @Throws(IOException::class)
     fun `check http logger`() {
-      
+        Assert.assertEquals(okHttpClient.interceptors().size, 1)
+        Assert.assertTrue(okHttpClient
