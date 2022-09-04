@@ -42,4 +42,5 @@ class OkHttpClientTest {
     fun `check http logger`() {
         Assert.assertEquals(okHttpClient.interceptors().size, 1)
         Assert.assertTrue(okHttpClient.interceptors()[0] is HttpLoggingInterceptor)
-        Assert.assertTrue((okHttpClient.interceptors()[
+        Assert.assertTrue((okHttpClient.interceptors()[0] as HttpLoggingInterceptor).level == HttpLoggingInterceptor.Level.BODY)
+ 
