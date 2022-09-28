@@ -19,4 +19,8 @@ import java.util.concurrent.TimeUnit
 
 /**
  * @author [kevalpatel2106](https://github.com/kevalpatel2106)
- 
+ */
+@RunWith(JUnit4::class)
+class BaseViewModelTest {
+
+    class TestViewModel : B
