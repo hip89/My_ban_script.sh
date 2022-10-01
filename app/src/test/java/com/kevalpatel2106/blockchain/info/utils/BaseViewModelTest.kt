@@ -25,4 +25,8 @@ class BaseViewModelTest {
 
     class TestViewModel : BaseViewModel() {
         fun addNewDisposable() {
-            addDisposable(Observable.timer
+            addDisposable(Observable.timer(10, TimeUnit.MINUTES).subscribe())
+        }
+
+        fun forceClear() {
+    
