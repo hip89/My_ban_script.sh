@@ -29,4 +29,8 @@ class BaseViewModelTest {
         }
 
         fun forceClear() {
-    
+            onCleared()
+        }
+    }
+
+    private lateinit var testViewModel: TestViewModel
