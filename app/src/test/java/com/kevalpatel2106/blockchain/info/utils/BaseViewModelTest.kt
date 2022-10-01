@@ -23,4 +23,6 @@ import java.util.concurrent.TimeUnit
 @RunWith(JUnit4::class)
 class BaseViewModelTest {
 
-    class TestViewModel : B
+    class TestViewModel : BaseViewModel() {
+        fun addNewDisposable() {
+            addDisposable(Observable.timer
