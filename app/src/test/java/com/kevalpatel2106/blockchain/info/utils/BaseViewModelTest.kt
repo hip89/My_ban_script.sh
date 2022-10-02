@@ -34,3 +34,10 @@ class BaseViewModelTest {
     }
 
     private lateinit var testViewModel: TestViewModel
+
+    @Before
+    fun setUp() {
+        testViewModel = TestViewModel()
+    }
+
+    @
