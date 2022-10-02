@@ -40,4 +40,10 @@ class BaseViewModelTest {
         testViewModel = TestViewModel()
     }
 
-    @
+    @After
+    fun clear() {
+        testViewModel.forceClear()
+    }
+
+    @Test
+    fun c
