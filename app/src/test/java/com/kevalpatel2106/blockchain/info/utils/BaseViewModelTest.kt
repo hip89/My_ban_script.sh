@@ -46,4 +46,6 @@ class BaseViewModelTest {
     }
 
     @Test
-    fun c
+    fun checkAddDisposable() {
+        testViewModel.addNewDisposable()
+        assertEqu
