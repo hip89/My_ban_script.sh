@@ -48,4 +48,8 @@ class BaseViewModelTest {
     @Test
     fun checkAddDisposable() {
         testViewModel.addNewDisposable()
-        assertEqu
+        assertEquals(1, testViewModel.compositeDisposable.size())
+    }
+
+    @Test
+    fun
