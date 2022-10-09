@@ -57,4 +57,7 @@ class BaseViewModelTest {
         assertEquals(1, testViewModel.compositeDisposable.size())
 
         testViewModel.forceClear()
-        assert
+        assertEquals(0, testViewModel.compositeDisposable.size())
+    }
+
+}
