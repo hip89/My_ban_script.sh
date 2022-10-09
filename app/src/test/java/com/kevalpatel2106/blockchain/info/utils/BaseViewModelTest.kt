@@ -52,4 +52,6 @@ class BaseViewModelTest {
     }
 
     @Test
-    fun
+    fun checkClearDisposable() {
+        testViewModel.addNewDisposable()
+        assertEquals(1, tes
