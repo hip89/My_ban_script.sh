@@ -54,4 +54,7 @@ class BaseViewModelTest {
     @Test
     fun checkClearDisposable() {
         testViewModel.addNewDisposable()
-        assertEquals(1, tes
+        assertEquals(1, testViewModel.compositeDisposable.size())
+
+        testViewModel.forceClear()
+        assert
