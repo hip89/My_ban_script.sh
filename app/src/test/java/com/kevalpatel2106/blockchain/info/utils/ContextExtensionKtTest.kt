@@ -10,4 +10,7 @@ package com.kevalpatel2106.blockchain.info.utils
 
 import android.content.Intent
 import android.graphics.Color
-import com.kevalpatel2106.blockchain.info.Spl
+import com.kevalpatel2106.blockchain.info.SplashActivity
+import org.junit.Assert.assertEquals
+import org.junit.Test
+import 
