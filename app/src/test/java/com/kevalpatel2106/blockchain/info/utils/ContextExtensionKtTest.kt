@@ -13,4 +13,6 @@ import android.graphics.Color
 import com.kevalpatel2106.blockchain.info.SplashActivity
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import 
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org
