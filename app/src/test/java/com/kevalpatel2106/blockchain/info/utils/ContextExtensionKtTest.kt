@@ -19,4 +19,7 @@ import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 
 /**
- * @author [kevalpatel2
+ * @author [kevalpatel2106](https://github.com/kevalpatel2106)
+ */
+@RunWith(RobolectricTestRunner::class)
+@Config
