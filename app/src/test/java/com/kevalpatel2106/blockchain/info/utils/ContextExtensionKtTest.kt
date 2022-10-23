@@ -22,4 +22,7 @@ import org.robolectric.annotation.Config
  * @author [kevalpatel2106](https://github.com/kevalpatel2106)
  */
 @RunWith(RobolectricTestRunner::class)
-@Config
+@Config(sdk = [21], manifest = Config.NONE)
+class ContextExtensionKtTest {
+
+    @Tes
