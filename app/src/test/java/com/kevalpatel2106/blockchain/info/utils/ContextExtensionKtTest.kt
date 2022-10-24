@@ -25,4 +25,7 @@ import org.robolectric.annotation.Config
 @Config(sdk = [21], manifest = Config.NONE)
 class ContextExtensionKtTest {
 
-    @Tes
+    @Test
+    @Throws(Exception::class)
+    fun testGetColor() {
+        assertEquals(Color.WHITE, RuntimeEn
