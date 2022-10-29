@@ -33,3 +33,6 @@ class ContextExtensionKtTest {
 
 
     @Test
+    @Throws(Exception::class)
+    fun checkPrepareLaunchIntent_InNewTask() {
+        v
