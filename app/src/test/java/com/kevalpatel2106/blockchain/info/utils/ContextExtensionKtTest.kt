@@ -28,4 +28,8 @@ class ContextExtensionKtTest {
     @Test
     @Throws(Exception::class)
     fun testGetColor() {
-        assertEquals(Color.WHITE, RuntimeEn
+        assertEquals(Color.WHITE, RuntimeEnvironment.application.getColorCompat(android.R.color.white))
+    }
+
+
+    @Test
