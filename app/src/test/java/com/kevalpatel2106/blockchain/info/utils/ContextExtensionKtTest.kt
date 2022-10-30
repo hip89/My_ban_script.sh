@@ -35,4 +35,5 @@ class ContextExtensionKtTest {
     @Test
     @Throws(Exception::class)
     fun checkPrepareLaunchIntent_InNewTask() {
-        v
+        val launchIntent = RuntimeEnvironment.application
+            .prepareLaunchInten
