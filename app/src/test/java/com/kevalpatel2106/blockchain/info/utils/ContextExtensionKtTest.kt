@@ -36,4 +36,6 @@ class ContextExtensionKtTest {
     @Throws(Exception::class)
     fun checkPrepareLaunchIntent_InNewTask() {
         val launchIntent = RuntimeEnvironment.application
-            .prepareLaunchInten
+            .prepareLaunchIntent(SplashActivity::class.java, true)
+
+        @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_O
