@@ -42,4 +42,5 @@ class ContextExtensionKtTest {
         assertEquals(SplashActivity::class.java.name, launchIntent.component.className)
         assertEquals(
             Intent.FLAG_ACTIVITY_CLEAR_TASK
-      
+                    or Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    or Intent.FLAG_ACTI
