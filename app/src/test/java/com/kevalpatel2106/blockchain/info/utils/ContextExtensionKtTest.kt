@@ -48,4 +48,6 @@ class ContextExtensionKtTest {
     }
 
     @Test
-    @Throws(Exception
+    @Throws(Exception::class)
+    fun checkPrepareLaunchIntent_WithoutNewTask() {
+        val launchIntent = Runt
