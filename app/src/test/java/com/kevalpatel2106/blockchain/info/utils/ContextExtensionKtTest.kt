@@ -51,4 +51,7 @@ class ContextExtensionKtTest {
     @Throws(Exception::class)
     fun checkPrepareLaunchIntent_WithoutNewTask() {
         val launchIntent = RuntimeEnvironment.application
-            .prepareLaunchIntent(SplashActivity::class.java, f
+            .prepareLaunchIntent(SplashActivity::class.java, false)
+
+        @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
+    
