@@ -50,4 +50,5 @@ class ContextExtensionKtTest {
     @Test
     @Throws(Exception::class)
     fun checkPrepareLaunchIntent_WithoutNewTask() {
-        val launchIntent = Runt
+        val launchIntent = RuntimeEnvironment.application
+            .prepareLaunchIntent(SplashActivity::class.java, f
