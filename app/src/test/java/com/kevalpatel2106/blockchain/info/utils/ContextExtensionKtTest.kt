@@ -54,4 +54,5 @@ class ContextExtensionKtTest {
             .prepareLaunchIntent(SplashActivity::class.java, false)
 
         @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-    
+        assertEquals(SplashActivity::class.java.name, launchIntent.component.className)
+     
