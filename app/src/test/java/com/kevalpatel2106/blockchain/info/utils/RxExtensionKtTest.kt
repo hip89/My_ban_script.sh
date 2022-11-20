@@ -4,4 +4,10 @@ import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.junit.runn
+import org.junit.runners.JUnit4
+
+@RunWith(JUnit4::class)
+class RxExtensionKtTest {
+
+    @Test
+    fun checkAddDisposabl
