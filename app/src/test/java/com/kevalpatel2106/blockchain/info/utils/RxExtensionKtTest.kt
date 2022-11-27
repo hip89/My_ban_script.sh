@@ -10,4 +10,6 @@ import org.junit.runners.JUnit4
 class RxExtensionKtTest {
 
     @Test
-    fun checkAddDisposabl
+    fun checkAddDisposable() {
+        val compositeDisposable = CompositeDisposable()
+        Observable.just(""
