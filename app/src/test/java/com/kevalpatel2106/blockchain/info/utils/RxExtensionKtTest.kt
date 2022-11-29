@@ -12,4 +12,7 @@ class RxExtensionKtTest {
     @Test
     fun checkAddDisposable() {
         val compositeDisposable = CompositeDisposable()
-        Observable.just(""
+        Observable.just("").subscribe().addTo(compositeDisposable)
+        assert(compositeDisposable.size() == 1)
+    }
+}
