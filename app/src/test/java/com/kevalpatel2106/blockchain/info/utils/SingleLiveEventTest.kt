@@ -81,3 +81,41 @@ class SingleLiveEventTest {
         // on second resume, no update should be emitted.
         lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_STOP)
         lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
+
+        // Check that the observer is called once
+        verify(eventObserver, times(1)).onChanged(anyInt())
+    }
+
+    @Test
+    fun twoUpdates_updatesTwice() {
+        // After a value is set
+        singleLiveEvent.value = 42
+
+        // observers are called once on resume
+        lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
+
+        // when the value is set again, observers are called again.
+        singleLiveEvent.value = 23
+
+        // Check that the observer has been called twice
+        verify(eventObserver, times(2)).onChanged(anyInt())
+    }
+
+    @Test
+    fun twoUpdates_noUpdateUntilActive() {
+        // Set a value
+        singleLiveEvent.value = 42
+
+        // which doesn't emit a change
+        verify(eventObserver, never()).onChanged(42)
+
+        // and set it again
+        singleLiveEvent.value = 42
+
+        // observers are called once on resume.
+        lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
+
+        // Check that the observer is called only once
+        verify(eventObserver, times(1)).onChanged(anyInt())
+    }
+}
