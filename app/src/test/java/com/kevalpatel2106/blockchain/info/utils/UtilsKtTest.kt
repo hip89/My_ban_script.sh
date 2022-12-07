@@ -11,4 +11,6 @@ class UtilsKtTest(private val satoshi: Long, private val btc: Double){
 
     companion object {
 
-      
+        @JvmStatic
+        @Parameterized.Parameters
+        fun data(): ArrayList<Array<out Any?>
