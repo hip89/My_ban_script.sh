@@ -13,4 +13,7 @@ class UtilsKtTest(private val satoshi: Long, private val btc: Double){
 
         @JvmStatic
         @Parameterized.Parameters
-        fun data(): ArrayList<Array<out Any?>
+        fun data(): ArrayList<Array<out Any?>> {
+            val list = ArrayList<Array<out Any?>>()
+            list.add(arrayOf(0L, 0.0))
+          
