@@ -26,4 +26,6 @@ class UtilsKtTest(private val satoshi: Long, private val btc: Double){
 
     @Test
     fun testIsValidDate() {
-        assertTrue(btc == conve
+        assertTrue(btc == convertToBtc(satoshi))
+    }
+}
