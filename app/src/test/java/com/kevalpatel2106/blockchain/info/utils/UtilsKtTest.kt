@@ -17,4 +17,6 @@ class UtilsKtTest(private val satoshi: Long, private val btc: Double){
             val list = ArrayList<Array<out Any?>>()
             list.add(arrayOf(0L, 0.0))
             list.add(arrayOf(-100L, -0.000001))
-            list.add(arrayOf(Math.pow(10.0, 4.0).ro
+            list.add(arrayOf(Math.pow(10.0, 4.0).roundToLong(), 0.0001))
+            list.add(arrayOf(Math.pow(10.0, 8.0).roundToLong(), 1.0))
+     
