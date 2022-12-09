@@ -8,4 +8,5 @@ buildscript {
 
     }
     dependencies {
-        classpath 'co
+        classpath 'com.android.tools.build:gradle:3.3.0-rc02'
+        classpath "org.jetbrains.kotlin:kotlin-gradl
