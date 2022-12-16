@@ -17,4 +17,11 @@ buildscript {
 }
 
 allprojects {
-    repositories
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.
