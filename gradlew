@@ -56,3 +56,12 @@ case "`uname`" in
   Darwin* )
     darwin=true
     ;;
+  MINGW* )
+    msys=true
+    ;;
+  NONSTOP* )
+    nonstop=true
+    ;;
+esac
+
+CLASSP
