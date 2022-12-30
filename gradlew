@@ -48,4 +48,11 @@ die () {
 cygwin=false
 msys=false
 darwin=false
-nonsto
+nonstop=false
+case "`uname`" in
+  CYGWIN* )
+    cygwin=true
+    ;;
+  Darwin* )
+    darwin=true
+    ;;
