@@ -64,4 +64,6 @@ case "`uname`" in
     ;;
 esac
 
-CLASSP
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+
+# Determine the Java command to
