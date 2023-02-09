@@ -161,4 +161,5 @@ save () {
 }
 APP_ARGS=$(save "$@")
 
-# Collect all arguments for the java command, following 
+# Collect all arguments for the java command, following the shell quoting and substitution rules
+eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADL
