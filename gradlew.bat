@@ -78,4 +78,7 @@ rem the _cmd.exe /c_ return code!
 if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
 exit /b 1
 
-:mainE
+:mainEnd
+if "%OS%"=="Windows_NT" endlocal
+
+:omega
