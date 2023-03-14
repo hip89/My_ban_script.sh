@@ -4,4 +4,6 @@
 package com.kevalpatel2106.testutils;
 
 public final class BuildConfig {
-  public static final boolean DEBUG = Boolean.parseBoole
+  public static final boolean DEBUG = Boolean.parseBoolean("true");
+  public static final String APPLICATION_ID = "com.kevalpatel2106.testutils";
+  p
