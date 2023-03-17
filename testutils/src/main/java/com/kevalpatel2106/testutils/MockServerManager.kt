@@ -58,3 +58,68 @@ class MockServerManager : Closeable {
      */
     fun startMockWebServer(): MockWebServer {
         try {
+            mockWebServer = MockWebServer()
+            mockWebServer.start()
+            return mockWebServer
+        } catch (e: IOException) {
+            e.printStackTrace()
+            throw RuntimeException("Failed to start mock server.")
+        }
+    }
+
+    /**
+     * Enqueue the next response in [mockWebServer].
+     */
+    @JvmOverloads
+    fun enqueueResponse(
+        response: String, type: String = "application/json",
+        responseCode: Int = HttpURLConnection.HTTP_OK
+    ) {
+        mockWebServer.enqueue(
+            MockResponse()
+                .setHeader("Content-type", type)
+                .setBody(response)
+                .setResponseCode(responseCode)
+        )
+    }
+
+    /**
+     * Enqueue the next response in [mockWebServer].
+     */
+    @JvmOverloads
+    fun enqueueResponse(
+        response: File,
+        type: String = "application/json",
+        responseCode: Int = HttpURLConnection.HTTP_OK
+    ) {
+        enqueueResponse(
+            response = FileReader.getStringFromFile(file = response),
+            type = type,
+            responseCode = responseCode
+        )
+    }
+
+    /**
+     * Enqueue the next response in [mockWebServer].
+     */
+    @JvmOverloads
+    fun enqueueResponse(
+        context: Context,
+        rawFile: Int,
+        type: String = "application/json",
+        responseCode: Int = HttpURLConnection.HTTP_OK
+    ) {
+        enqueueResponse(
+            response = FileReader.getStringFromRawFile(context, rawFile),
+            type = type,
+            responseCode = responseCode
+        )
+    }
+
+
+    fun getBaseUrl() = mockWebServer.url("/").toString()
+
+    override fun close() {
+        mockWebServer.shutdown()
+    }
+}
