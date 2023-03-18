@@ -109,3 +109,19 @@ class MockSharedPreference : SharedPreferences {
             preferenceMap.remove(s)
             return this
         }
+
+        override fun clear(): SharedPreferences.Editor {
+            preferenceMap.clear()
+            return this
+        }
+
+        override fun commit(): Boolean {
+            return true
+        }
+
+        override fun apply() {
+            // Nothing to do, everything is saved in memory.
+        }
+    }
+
+}
