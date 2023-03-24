@@ -18,4 +18,7 @@ import io.reactivex.Scheduler;
 import io.reactivex.android.plugins.RxAndroidPlugins;
 import io.reactivex.functions.Function;
 import io.reactivex.plugins.RxJavaPlugins;
-import
+import io.reactivex.schedulers.Schedulers;
+
+/**
+ * This rule registers Handlers for RxJava an
