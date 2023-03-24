@@ -21,4 +21,5 @@ import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * This rule registers Handlers for RxJava an
+ * This rule registers Handlers for RxJava and RxAndroid to ensure that subscriptions
+ * always subscribeOn and o
