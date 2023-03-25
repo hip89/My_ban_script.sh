@@ -23,4 +23,5 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * This rule registers Handlers for RxJava and RxAndroid to ensure that subscriptions
  * always subscribeOn and observeOn Schedulers.trampoline().
- * Warning, this rule will reset RxAndroidPlugins and
+ * Warning, this rule will reset RxAndroidPlugins and RxJavaPlugins before and after each test so
+ * if the application code uses RxJava plugins t
