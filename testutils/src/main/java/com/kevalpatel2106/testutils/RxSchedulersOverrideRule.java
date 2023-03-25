@@ -26,4 +26,6 @@ import io.reactivex.schedulers.Schedulers;
  * Warning, this rule will reset RxAndroidPlugins and RxJavaPlugins before and after each test so
  * if the application code uses RxJava plugins this may affect the behaviour of the testing method.
  */
-public class RxSchedulersOverri
+public class RxSchedulersOverrideRule implements TestRule {
+
+    private final Function<Callable<Scheduler>, Scheduler> mRxAn
