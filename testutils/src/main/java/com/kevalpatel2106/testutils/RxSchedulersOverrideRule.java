@@ -28,4 +28,7 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class RxSchedulersOverrideRule implements TestRule {
 
-    private final Function<Callable<Scheduler>, Scheduler> mRxAn
+    private final Function<Callable<Scheduler>, Scheduler> mRxAndroidSchedulersHook =
+            schedulerCallable -> getScheduler();
+
+    private final Function<Sc
