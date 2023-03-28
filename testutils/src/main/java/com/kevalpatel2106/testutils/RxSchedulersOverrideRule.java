@@ -31,4 +31,7 @@ public class RxSchedulersOverrideRule implements TestRule {
     private final Function<Callable<Scheduler>, Scheduler> mRxAndroidSchedulersHook =
             schedulerCallable -> getScheduler();
 
-    private final Function<Sc
+    private final Function<Scheduler, Scheduler> mRxJavaImmediateScheduler =
+            scheduler -> getScheduler();
+
+    @Ove
