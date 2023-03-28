@@ -34,4 +34,5 @@ public class RxSchedulersOverrideRule implements TestRule {
     private final Function<Scheduler, Scheduler> mRxJavaImmediateScheduler =
             scheduler -> getScheduler();
 
-    @Ove
+    @Override
+    public Statement apply(final Statement base, Description descripti
