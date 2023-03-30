@@ -35,4 +35,7 @@ public class RxSchedulersOverrideRule implements TestRule {
             scheduler -> getScheduler();
 
     @Override
-    public Statement apply(final Statement base, Description descripti
+    public Statement apply(final Statement base, Description description) {
+        return new Statement() {
+            @Override
+            public void evalua
