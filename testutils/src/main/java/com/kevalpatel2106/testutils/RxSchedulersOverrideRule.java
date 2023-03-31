@@ -40,4 +40,6 @@ public class RxSchedulersOverrideRule implements TestRule {
             @Override
             public void evaluate() throws Throwable {
                 RxAndroidPlugins.reset();
-                RxAndroidP
+                RxAndroidPlugins.setInitMainThreadSchedulerHandler(mRxAndroidSchedulersHook);
+
+                RxJavaP
