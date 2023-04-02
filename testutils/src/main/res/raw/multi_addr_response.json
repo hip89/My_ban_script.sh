@@ -5,3 +5,99 @@
     "nconnected": 0,
     "conversion": 100000000,
     "symbol_local": {
+      "code": "USD",
+      "symbol": "$",
+      "name": "U.S. dollar",
+      "conversion": 24841.81971298,
+      "symbolAppearsAfter": false,
+      "local": true
+    },
+    "symbol_btc": {
+      "code": "BTC",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "conversion": 100000000,
+      "symbolAppearsAfter": true,
+      "local": false
+    },
+    "latest_block": {
+      "block_index": 1737300,
+      "hash": "0000000000000000002440a943b3de4333a3648bdce64e132f384f329b26f99f",
+      "height": 554747,
+      "time": 1545387178
+    }
+  },
+  "wallet": {
+    "n_tx": 380,
+    "n_tx_filtered": 380,
+    "total_received": 29715281,
+    "total_sent": 29094045,
+    "final_balance": 621236
+  },
+  "addresses": [
+    {
+      "address": "xpub6CfLQa8fLgtouvLxrb8EtvjbXfoC1yqzH6YbTJw4dP7srt523AhcMV8Uh4K3TWSHz9oDWmn9MuJogzdGU3ncxkBsAC9wFBLmFrWT9Ek81kQ",
+      "n_tx": 380,
+      "total_received": 29715281,
+      "total_sent": 29094045,
+      "final_balance": 621236,
+      "gap_limit": 20,
+      "change_index": 209,
+      "account_index": 149
+    }
+  ],
+  "txs": [
+    {
+      "hash": "4524ce25c3134b42970dd94c6d2096a81dc9fb7381b986fe5eb57d98ede7655d",
+      "ver": 1,
+      "vin_sz": 5,
+      "vout_sz": 1,
+      "size": 782,
+      "weight": 3128,
+      "fee": 17996,
+      "relayed_by": "127.0.0.1",
+      "lock_time": 0,
+      "tx_index": 390785337,
+      "double_spend": false,
+      "result": 559182,
+      "balance": 621236,
+      "time": 1542639840,
+      "block_height": 550781,
+      "block_index": 1733333,
+      "inputs": [
+        {
+          "prev_out": {
+            "value": 549467,
+            "tx_index": 368426023,
+            "n": 12,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 390785337,
+                "n": 0
+              }
+            ],
+            "script": "76a91467d2bbb1edb2e74abcdedfd81b529afcfb8da60988ac",
+            "type": 0,
+            "addr": "1ATy3ktyaYjzZZQQnhvPsuBVheUDYcUP7V"
+          },
+          "sequence": 4294967295,
+          "script": "48304502210094d1b9d4d56a32bd7f682468f66b3b46e1cfdb83b4ce7c1045523c3a6b0f8dfb02206f7e168ab27aede85925a00dd5b1a5d1fbe975674b2e00a8bcbd7e907393de1101210290e4f0259ef0327e486f4f7556e7ebd18d9b3fac3c1027dea5ace39b1dcd2d11",
+          "witness": ""
+        },
+        {
+          "prev_out": {
+            "value": 7359,
+            "tx_index": 276811527,
+            "n": 1554,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 390785337,
+                "n": 1
+              }
+            ],
+            "script": "76a91467d2bbb1edb2e74abcdedfd81b529afcfb8da60988ac",
+            "type": 0,
+            "addr": "1ATy3ktyaYjzZZQQnhvPsuBVheUDYcUP7V"
+          },
