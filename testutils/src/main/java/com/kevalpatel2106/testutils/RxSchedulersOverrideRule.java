@@ -55,4 +55,7 @@ public class RxSchedulersOverrideRule implements TestRule {
     }
 
     public Scheduler getScheduler() {
-        retur
+        return Schedulers.trampoline();
+    }
+
+}
