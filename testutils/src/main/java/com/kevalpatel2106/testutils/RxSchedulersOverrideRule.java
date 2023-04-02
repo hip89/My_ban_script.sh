@@ -49,4 +49,10 @@ public class RxSchedulersOverrideRule implements TestRule {
                 base.evaluate();
 
                 RxAndroidPlugins.reset();
-                RxJavaPlugins.reset(
+                RxJavaPlugins.reset();
+            }
+        };
+    }
+
+    public Scheduler getScheduler() {
+        retur
