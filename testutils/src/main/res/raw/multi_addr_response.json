@@ -187,3 +187,97 @@
       "ver": 1,
       "vin_sz": 5,
       "vout_sz": 2,
+      "size": 817,
+      "weight": 3268,
+      "fee": 9816,
+      "relayed_by": "127.0.0.1",
+      "lock_time": 0,
+      "tx_index": 389384005,
+      "double_spend": false,
+      "result": -17791,
+      "balance": 62054,
+      "time": 1542205548,
+      "block_height": 550064,
+      "block_index": 1732616,
+      "inputs": [
+        {
+          "prev_out": {
+            "value": 3918,
+            "tx_index": 275426829,
+            "n": 0,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 389384005,
+                "n": 0
+              }
+            ],
+            "script": "76a914f42f05218b57a290e3eb48daaac36ed22bde2bc288ac",
+            "type": 0,
+            "addr": "1PG8CpMgEMXVbzuiED9oecDwxQ66gWGji1",
+            "xpub": {
+              "m": "xpub6CfLQa8fLgtouvLxrb8EtvjbXfoC1yqzH6YbTJw4dP7srt523AhcMV8Uh4K3TWSHz9oDWmn9MuJogzdGU3ncxkBsAC9wFBLmFrWT9Ek81kQ",
+              "path": "M/1/143"
+            }
+          },
+          "sequence": 4294967295,
+          "script": "483045022100a79568c0a6395a308f96b1f75857312d831b7bbab9e2374477cbb724711f0c5a0220126101353afb4447ef1aff46356257ff2ae548b7c4726a58f6bac3f6d1724cfb012103c129fd5f7a0f53f833ec24c882ff413579f2a0a0ba97db9f7529a1fdd700e79e",
+          "witness": ""
+        },
+        {
+          "prev_out": {
+            "value": 3000,
+            "tx_index": 192598969,
+            "n": 0,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 389384005,
+                "n": 1
+              }
+            ],
+            "script": "76a9147771b94fa5683c690cbdcc5392d3178234836aea88ac",
+            "type": 0,
+            "addr": "1BtZeW4AcxNaZhySriwcGh1aghyGb7MSJy",
+            "xpub": {
+              "m": "xpub6CfLQa8fLgtouvLxrb8EtvjbXfoC1yqzH6YbTJw4dP7srt523AhcMV8Uh4K3TWSHz9oDWmn9MuJogzdGU3ncxkBsAC9wFBLmFrWT9Ek81kQ",
+              "path": "M/0/36"
+            }
+          },
+          "sequence": 4294967295,
+          "script": "483045022100fb7fcc9b131358b329c3ea18586bdd8cd105fead84b384aa8609ae663d7df1b902206c4edb636bd7adac4b57d2e0d4bc4bf482ceab34fb830f5670e281efd99686d801210312770bf6725c78ab7eed2b05230ac9ef666eb6c446d8e9d0c61998da39b7fa6d",
+          "witness": ""
+        },
+        {
+          "prev_out": {
+            "value": 4109,
+            "tx_index": 387167217,
+            "n": 0,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 389384005,
+                "n": 2
+              }
+            ],
+            "script": "76a9149aa0aa9441560e626c253f8dfb4e6d25e7bbc72d88ac",
+            "type": 0,
+            "addr": "1F6bXqN1FwAWS5uXUZAq383zfoUN3DzSMA",
+            "xpub": {
+              "m": "xpub6CfLQa8fLgtouvLxrb8EtvjbXfoC1yqzH6YbTJw4dP7srt523AhcMV8Uh4K3TWSHz9oDWmn9MuJogzdGU3ncxkBsAC9wFBLmFrWT9Ek81kQ",
+              "path": "M/1/207"
+            }
+          },
+          "sequence": 4294967295,
+          "script": "483045022100860243de470f06a3aaa50ddadc90cf53c6a51edea6e92f1001dbfbfc656946fd02207804e76a981185ae35c25ba01481420ba17607481410e16fd25c146ee4b5d10d0121035b280465f889e43ed2f1ef0d1424796a879030efc7789109661159bcdb365bd5",
+          "witness": ""
+        },
+        {
+          "prev_out": {
+            "value": 3000,
+            "tx_index": 205674980,
+            "n": 0,
+            "spent": true,
+            "spending_outpoints": [
+              {
+                "tx_index": 389384005,
